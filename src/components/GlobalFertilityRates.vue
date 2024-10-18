@@ -30,16 +30,16 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/global-fertility-rates1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text, map controls, paginated list of nations, list of regional averages, search bar, and placeholder for the map.</figcaption>
+                <img class="rounded" src="/images/wireframes/global-fertility-rates1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text, map controls, paginated list of nations, list of regional averages, search bar, and placeholder for the map.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/global-fertility-rates1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/global-fertility-rates1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/global-fertility-rates1c.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1C</strong> - Some rates selected (note shading on map) and result of user entering "Spain" in search bar.</figcaption>
+                <img class="rounded" src="/images/wireframes/global-fertility-rates1c.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1C</strong> - Some rates selected (note shading on map) and result of user entering "Spain" in search bar.</figcaption>
             </figure>
         </div>
     </main>

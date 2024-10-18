@@ -30,16 +30,16 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/us-senate-directory1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for seal and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-senate-directory1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for seal and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-senate-directory1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-senate-directory1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-senate-directory1c.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1C</strong> - Independent senators selected.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-senate-directory1c.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1C</strong> - Independent senators selected.</figcaption>
             </figure>
         </div>
     </main>

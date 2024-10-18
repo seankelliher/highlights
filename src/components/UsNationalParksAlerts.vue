@@ -30,28 +30,28 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text, search bar, paginated list of parks, and placeholders for the decorative image and logo.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text, search bar, paginated list of parks, and placeholders for the decorative image and logo.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts2a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 2A</strong> - Initial wireframe depicting a search for "Acadia National Park."</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts2a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2A</strong> - Initial wireframe depicting a search for "Acadia National Park."</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts2b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 2B</strong> - "Search" wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts2b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2B</strong> - "Search" wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts3a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 3A</strong> - Initial wireframe depicting returned alert for "Acadia National Park."</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts3a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 3A</strong> - Initial wireframe depicting returned alert for "Acadia National Park."</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/us-national-parks-alerts3b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 3B</strong> - "Result" wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/us-national-parks-alerts3b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 3B</strong> - "Result" wireframe with styling and images.</figcaption>
             </figure>
         </div>
     </main>

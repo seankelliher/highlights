@@ -30,16 +30,16 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-firehouses1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for logos and chart.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-firehouses1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for logos and chart.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-firehouses1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-firehouses1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-firehouses1c.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1C</strong> - "Pop up" with information on a specific firehouse.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-firehouses1c.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1C</strong> - "Pop up" with information on a specific firehouse.</figcaption>
             </figure>
         </div>
     </main>

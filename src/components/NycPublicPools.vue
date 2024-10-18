@@ -30,28 +30,28 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholder for logo.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholder for logo.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and image.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and image.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools2a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 2A</strong> - Initial wireframe depicting indoor pools in Queens.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools2a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2A</strong> - Initial wireframe depicting indoor pools in Queens.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools2b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 2B</strong> - "Indoor Queens" wireframe with styling and image.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools2b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2B</strong> - "Indoor Queens" wireframe with styling and image.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools3a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 3A</strong> - Initial wireframe with "pop up" details on pool displayed.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools3a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 3A</strong> - Initial wireframe with "pop up" details on pool displayed.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-public-pools3b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 3B</strong> - "Pop up" wireframe with styling and image.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-public-pools3b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 3B</strong> - "Pop up" wireframe with styling and image.</figcaption>
             </figure>
         </div>
     </main>

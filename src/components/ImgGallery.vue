@@ -30,12 +30,12 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/img-gallery1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with caption, arrows, and placeholders for the "featured" and "thumbnail" images.</figcaption>
+                <img class="rounded" src="/images/wireframes/img-gallery1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with caption, arrows, and placeholders for the "featured" and "thumbnail" images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/img-gallery1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/img-gallery1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
         </div>
     </main>

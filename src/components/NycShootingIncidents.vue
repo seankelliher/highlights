@@ -30,20 +30,20 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-shooting-incidents1a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for logos and map.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-shooting-incidents1a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1A</strong> - Initial wireframe with text and placeholders for logos and map.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-shooting-incidents1b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-shooting-incidents1b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1B</strong> - Wireframe with styling and images.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-shooting-incidents2a.png" alt="wireframe drawing of page, without styling">
-                <figcaption><strong>Wireframe 2A</strong> - Initial wireframe depicting data for shooting victims.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-shooting-incidents2a.png" alt="wireframe drawing of page, without styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2A</strong> - Initial wireframe depicting data for shooting victims.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/nyc-shooting-incidents2b.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 2B</strong> - "Victims" wireframe with styling and images. "Pop up" depicted on map.</figcaption>
+                <img class="rounded" src="/images/wireframes/nyc-shooting-incidents2b.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2B</strong> - "Victims" wireframe with styling and images. "Pop up" depicted on map.</figcaption>
             </figure>
         </div>
     </main>

@@ -30,32 +30,32 @@ import { links } from "../composables/repo-links.js";
         </div>
         <div class="wireframes">
             <figure class="flow-chart">
-                <img src="/images/wireframes/map-coordinates-dms-flow.png" alt="flow chart drawing, steps for using interface">
-                <figcaption><strong>Flow chart</strong> - Illustrates a user's pathway and options available at each step.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms-flow.png" alt="flow chart drawing, steps for using interface">
+                <figcaption class="wire-caption"><strong>Flow chart</strong> - Illustrates a user's pathway and options available at each step.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms1.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 1</strong> - step 1, enter your coordinates or choose a sample location.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms1.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 1</strong> - step 1, enter your coordinates or choose a sample location.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms2.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 2</strong> - step 2, longitude coordinates.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms2.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 2</strong> - step 2, longitude coordinates.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms3.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 3</strong> - step 3, latitude coordinates.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms3.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 3</strong> - step 3, latitude coordinates.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms4.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 4</strong> - step 4, level of precision.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms4.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 4</strong> - step 4, level of precision.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms5.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 5</strong> - step 5, review the data.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms5.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 5</strong> - step 5, review the data.</figcaption>
             </figure>
             <figure class="wireframe">
-                <img src="/images/wireframes/map-coordinates-dms6.png" alt="wireframe drawing of page, with styling">
-                <figcaption><strong>Wireframe 6</strong> - step 6, see converted coordinates and map of location.</figcaption>
+                <img class="rounded" src="/images/wireframes/map-coordinates-dms6.png" alt="wireframe drawing of page, with styling">
+                <figcaption class="wire-caption"><strong>Wireframe 6</strong> - step 6, see converted coordinates and map of location.</figcaption>
             </figure>
         </div>
     </main>
