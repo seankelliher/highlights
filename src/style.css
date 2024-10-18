@@ -4,7 +4,7 @@ body {
     background: #f7f9ff; /* N-98 */
 }
 
-/*Image becomes no larger than actual size.*/
+/* Image becomes no larger than actual size. */
 img {
     max-width: 100%;
     height: auto;
@@ -154,14 +154,13 @@ main {
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: stretch;
+    place-content: space-between stretch; /* justify-content + align-content */
 }
 
 figure.project {
     width: 17%;
     max-width: 220px;
-    margin: 0 0 2em 0;
+    margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
     flex: initial;
 }
@@ -227,7 +226,7 @@ figure.project {
 
 figure.wireframe {
     width: 47.5%;
-    margin: 0 0 2em 0;
+    margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
     border: 2px solid #c1c7ce; /* NV-80 */
     border-radius: 6px;
@@ -237,7 +236,7 @@ figure.wireframe {
 
 figure.flow-chart {
     width: 100%;
-    margin: 0 0 2em 0;
+    margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
     border: 2px solid #c1c7ce; /* NV-80 */
     border-radius: 6px;
@@ -247,7 +246,7 @@ figure.flow-chart {
 
 footer {
     width: 95%;
-    margin: 2em 0 0 0;
+    margin: 2em 0 0; /* Longhand 2em 0 0 0 */
     padding: 1em 2.5%;
     background: #d6dbde;  /* N-87 */
     border-top: 2px solid #c1c7ce; /* NV-80 */
@@ -303,7 +302,7 @@ h2 {
     line-height: 1.5;
     font-weight: 500;
     color: #001944;  S-10 
-}*/
+} */
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -318,12 +317,12 @@ p a {
     text-decoration: underline;
 }
 
-/* "See all" for future use */
-/* .see-all {
+/* "See all" for future use
+    .see-all {
     color: #5f621a; T-40
-}
+} */
 
-.see-all:hover {
+/* .see-all:hover {
     cursor: pointer;
     text-decoration: underline;
 } */
