@@ -30,8 +30,8 @@ header {
     width: 95%;
     margin: 0;
     padding: 0 2.5%;
-    background: #cae6ff;  /* P-90 */
-    border-bottom: 2px solid #276389; /* P-40 */
+    background: #2c3134;  /* N-20 */
+    border-bottom: 2px solid #000; /* Scrim */
     position: relative;
     flex: initial;
     display: flex;
@@ -44,19 +44,19 @@ header::before {
     content: "";
     position: absolute;
     inset: -2px calc((100vw - 100%) / -2);
-    background: #cae6ff;  /* P-90 */
-    border-bottom: 2px solid #276389; /* P-40 */
+    background: #2c3134;  /* N-20 */
+    border-bottom: 2px solid #000; /* Scrim */
     z-index: -1;
 }
 
-.menu-icon {
+figure.menu-icon {
     width: 32px;
     margin: 0;
     padding: 0;
     flex: initial;
 }
 
-.menu-icon:hover {
+figure.menu-icon:hover {
     cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ nav {
     right: 2.5%;
     top: 60px;
     z-index: 1;
-    background: #eaeef2; /* N-94 */
+    background: #f0f4f8; /* N-96 */
 }
 
 .intro {
@@ -77,10 +77,11 @@ nav {
     padding: 0 2.5%;
     background: #d9e2ff; /* S-90 */
     border-radius: 6px;
+    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -93,9 +94,12 @@ figure.avatar {
 }
 
 .intro-text {
-    width: 70%;
+    width: 35%;
     margin: 0;
     padding: 0 2.5%;
+    border: 2px solid #001944; /* S-10 */
+    border-radius: 6px;
+    text-align: center;
     flex: initial;
 }
 
@@ -103,7 +107,7 @@ main {
     width: 90%;
     margin: 0 2.5%;
     padding: 0 2.5%;
-    background: #f1f4f9;  /* N-96 */ /* MAYBE BETTER WITHOUT BG COLOR? */
+    background: #eaeef2;  /* N-94 */
     border-radius: 6px;
     flex: initial;
     display: flex;
@@ -142,6 +146,7 @@ main {
     flex: initial;
 }
 
+/* These are the thumbnails on homepage */
 .projects {
     width: 100%;
     margin: 0;
@@ -158,6 +163,7 @@ figure.project {
     max-width: 220px;
     margin: 0 0 2em 0;
     padding: 0;
+    flex: initial;
 }
 
 /* Pages for wireframes */
@@ -166,7 +172,8 @@ figure.project {
     margin: 2em 2.5%;
     padding: 0 2.5%;
     border-radius: 6px;
-    background: #d9e2ff; /* CHANGE */
+    background: #d9e2ff; /* S-90 */
+    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -191,6 +198,7 @@ figure.project {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    box-shadow: 2px 2px 4px 1px #afc6ff; /*  S-80 */
 }
 
 .link {
@@ -221,21 +229,33 @@ figure.wireframe {
     width: 47.5%;
     margin: 0 0 2em 0;
     padding: 0;
+    border: 2px solid #c1c7ce; /* NV-80 */
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
+    flex: initial;
 }
 
 figure.flow-chart {
     width: 100%;
     margin: 0 0 2em 0;
     padding: 0;
+    border: 2px solid #c1c7ce; /* NV-80 */
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
+    flex: initial;
 }
 
 footer {
     width: 95%;
     margin: 2em 0 0 0;
     padding: 1em 2.5%;
-    background: #e4e9ec;  /* N-92 */
-    border-top: 2px solid #d6dbde; /* N-87 */
+    background: #d6dbde;  /* N-87 */
+    border-top: 2px solid #c1c7ce; /* NV-80 */
     flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
 }
 
@@ -243,9 +263,20 @@ footer::before {
     content: "";
     position: absolute;
     inset: -2px calc((100vw - 100%) / -2);
-    background: #e4e9ec;  /* N-92 */
-    border-top: 2px solid #d6dbde; /* N-87 */
+    background: #d6dbde;  /* N-87 */
+    border-top: 2px solid #c1c7ce; /* NV-80 */
     z-index: -1;
+}
+
+figure.git-icon {
+    width: 80px;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    flex: initial;
+}
+
+figure.git-icon:hover {
+    cursor: pointer;
 }
 
 /* FONTS */
@@ -254,7 +285,7 @@ h1 {
     font-size: 1.25em; /* 20px */
     line-height: 1.5;
     font-weight: 600;
-    color: #276389; /* P-40 */ /* MAY NOT HAVE ENOUGH CONTRAST */
+    color: #edf1f5; /* N-95 */
     display: inline-flex; /* Keeps hyerlink to only text */
 }
 
@@ -266,13 +297,13 @@ h2 {
     color: #181c20; /* N-10 */
 }
 
-h3 {
+/* h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.375em; /* 22px */
+    font-size: 1.375em;  22px 
     line-height: 1.5;
     font-weight: 500;
-    color: #001944; /* S-10 */
-}
+    color: #001944;  S-10 
+}*/
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -282,14 +313,20 @@ p {
     color: #181c20; /* N-10 */
 }
 
-.see-all {
-    color: #5f621a; /* T-40 */
+p a {
+    color: #181c20; /* N-10 */
+    text-decoration: underline;
+}
+
+/* "See all" for future use */
+/* .see-all {
+    color: #5f621a; T-40
 }
 
 .see-all:hover {
     cursor: pointer;
     text-decoration: underline;
-}
+} */
 
 .magenta {
     color: #001944; /* S-10 */
@@ -302,6 +339,12 @@ figcaption {
     font-weight: 400;
     color: #41474d; /* NV-30 */
     text-align: center;
+}
+
+/* For figcaption on wireframes */
+.wire-caption {
+    padding: 2.5% 1em;
+    text-align: left;
 }
 
 dl {
