@@ -32,12 +32,17 @@ onMounted(() => {
             <img
                 src="/images/avatar-design.png"
                 alt="illustration, man with scarf"
-                class="rounded"
             >
         </figure>
         <div class="intro-text">
-            <h3>{{ greeting }} Thank you for visiting.</h3>
+            <p class="magenta"><strong>{{ greeting }}</strong> Thank you for visiting and I hope you find something of interest within.</p>
         </div>
+        <figure class="avatar">
+            <img
+                src="/images/flower-petals-few.png"
+                alt="illustration, flower with colorful petals"
+            >
+        </figure>
     </div>
 
     <main>
@@ -53,7 +58,7 @@ onMounted(() => {
                 </p> -->
             </div>
             <div class="limit-text">
-                <p>I began these interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly <em>Material Design</em> inspired) styling. Lastly, I wrote the code to transform the designs into fully-functioning and accessible interfaces.</p>
+                <p>I began these user interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly <em>Material Design</em> inspired) styling. Lastly, I wrote the code to transform the designs into fully-functioning and accessible interfaces.</p>
             </div>
         </div>
 
