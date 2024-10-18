@@ -16,9 +16,9 @@ const hideMenu = () => menu.value = false;
         <RouterLink to="/">
             <h1>Sean Kelliher</h1>
         </RouterLink>
-        <div class="menu-icon" @click="toggleMenu()">
-            <img src="/images/menu-icon-32.svg" alt="XXXX">
-        </div>
+        <figure class="menu-icon" @click="toggleMenu()">
+            <img src="/images/menu-icon-32.svg" alt="icon for website's menu">
+        </figure>
         <NavPart :menu="menu" @hide-menu="hideMenu" />
     </header>
 </template>
