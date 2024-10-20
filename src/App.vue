@@ -1,11 +1,11 @@
 <script setup>
-import HeaderPart from "./components/HeaderPart.vue";
+import HeaderNav from "./components/HeaderNav.vue";
 import FooterPart from "./components/FooterPart.vue";
 </script>
 
 <template>
     <div id="container">
-        <HeaderPart />
+        <HeaderNav />
         <RouterView />
         <FooterPart />
     </div>
