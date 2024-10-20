@@ -11,13 +11,23 @@ import { links } from "../composables/repo-links.js";
 
         <div class="links">
             <div class="link">
-                <dl @click="links.openGitHub($route.fullPath)">
+                <dl
+                    @click="links.openGitHub($route.fullPath)"
+                    @keyup.enter="links.openGitHub($route.fullPath)"
+                    tabindex="0"
+                    role="link"
+                >
                     <dt>GitHub</dt>
                     <dd>See code for project on GitHub</dd>
                 </dl>
             </div>
             <div class="link">
-                <dl @click="links.openHerokuComplex($route.fullPath, 'fa601db96052')">
+                <dl
+                    @click="links.openHerokuComplex($route.fullPath, 'fa601db96052')"
+                    @keyup.enter="links.openHerokuComplex($route.fullPath, 'fa601db96052')"
+                    tabindex="0"
+                    role="link"
+                >
                     <dt>Live Version</dt>
                     <dd>See live version on Heroku (opens slowly)</dd>
                 </dl>

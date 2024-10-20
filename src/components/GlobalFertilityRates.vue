@@ -11,13 +11,23 @@ import { links } from "../composables/repo-links.js";
 
         <div class="links">
             <div class="link">
-                <dl @click="links.openGitHub($route.fullPath)">
+                <dl
+                    @click="links.openGitHub($route.fullPath)"
+                    @keyup.enter="links.openGitHub($route.fullPath)"
+                    tabindex="0"
+                    role="link"
+                >
                     <dt>GitHub</dt>
                     <dd>See code for project on GitHub</dd>
                 </dl>
             </div>
             <div class="link">
-                <dl @click="links.openNetlify($route.fullPath)">
+                <dl
+                    @click="links.openNetlify($route.fullPath)"
+                    @keyup.enter="links.openNetlify($route.fullPath)"
+                    tabindex="0"
+                    role="link"
+                >
                     <dt>Live Version</dt>
                     <dd>See live version on Netlify</dd>
                 </dl>
