@@ -163,6 +163,8 @@ main {
     width: 90%;
     margin: 0 2.5%;
     padding: 0 2.5%;
+    border: 2px solid #e4e9ec; /* N-92 */
+    border-radius: 6px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
