@@ -535,8 +535,13 @@ figure.git-icon {
     flex: initial;
 }
 
-figure.git-icon:hover {
-    cursor: pointer;
+.error-text {
+    width: 90%;
+    margin: 2em 2.5% 0; /* Longhand 2em 2.5% 0 2.5% */
+    padding: 0 2.5%;
+    background: #eaeef2;  /* N-94 */
+    border-radius: 6px;
+    flex: initial;
 }
 
 .footer-text {
