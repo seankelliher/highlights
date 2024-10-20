@@ -2,7 +2,7 @@
 import { thumbs } from "../data/intro-thumbs.js";
 import { ref, onMounted } from "vue";
 
-const limit = ref(10);
+// const limit = ref(10);
 const greeting = ref("");
 
 onMounted(() => {
@@ -33,6 +33,7 @@ onMounted(() => {
                 src="/images/avatar-design.png"
                 alt="illustration, man with scarf"
             >
+            <figcaption hidden>avatar of friendly site owner</figcaption>
         </figure>
         <div class="intro-text">
             <p class="magenta"><strong>{{ greeting }}</strong> Thank you for visiting and I hope you find something of interest within.</p>
@@ -42,6 +43,7 @@ onMounted(() => {
                 src="/images/flower-petals-few.png"
                 alt="illustration, flower with colorful petals"
             >
+            <figcaption hidden>a pretty flower</figcaption>
         </figure>
     </div>
 
@@ -61,17 +63,18 @@ onMounted(() => {
                 <p>I began these user interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly <em>Material Design</em> inspired) styling. Lastly, I wrote the code to transform the designs into fully-functioning and accessible interfaces.</p>
             </div>
         </div>
-
         <div class="projects">
-            <figure v-for="n in limit" :key="thumbs[n-1].id" class="project">
-                <RouterLink :to="`/${thumbs[n-1].id}`">
+            <figure v-for="thumb in thumbs" :key="thumb.id" class="project">
+                <RouterLink :to="`/${thumb.id}`">
                     <img
-                        :src="`/images/thumbs/${thumbs[n-1].src}.jpg`"
-                        :alt="`${thumbs[n-1].alt}`"
+                        :src="`/images/thumbs/${thumb.src}.jpg`"
+                        :alt="`${thumb.alt}`"
                         class="rounded"
                     >
-                    <figcaption>{{ thumbs[n-1].caption }}</figcaption>
                 </RouterLink>
+                <figcaption>
+                    <RouterLink :to="`/${thumb.id}`">{{ thumb.caption }}</RouterLink>
+                </figcaption>
             </figure>
         </div>
     </main>
