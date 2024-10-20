@@ -62,7 +62,7 @@ figure.menu-icon:hover {
 }
 
 nav {
-    /* width: 12em; */
+    width: 15em;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -563,14 +563,6 @@ h2 {
     color: #181c20; /* N-10 */
 }
 
-/* h3 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.375em;  22px 
-    line-height: 1.5;
-    font-weight: 500;
-    color: #001944;  S-10 
-} */
-
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em; /* 16px */
@@ -584,16 +576,6 @@ p a {
     text-decoration: underline;
 }
 
-/* "See all" for future use
-    .see-all {
-    color: #5f621a; T-40
-} */
-
-/* .see-all:hover {
-    cursor: pointer;
-    text-decoration: underline;
-} */
-
 .magenta {
     color: #001944; /* S-10 */
 }
@@ -605,6 +587,10 @@ figcaption {
     font-weight: 400;
     color: #41474d; /* NV-30 */
     text-align: center;
+}
+
+figcaption a {
+    color: #41474d; /* NV-30 */
 }
 
 /* For figcaption on wireframes */
@@ -635,14 +621,7 @@ dd {
     color: #465d91; /* S-40 */
 }
 
-ul {
-    width: 15em;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-li {
+.nav-item {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em; /* 16px */
     line-height: 2.5;
@@ -650,22 +629,25 @@ li {
     color: #181c20; /* N-10 */
     padding-left: 1.5em;
     padding-right: 1.5em;
+    display: inline-flex;
+    width: 12em;
 }
 
-li:hover {
+.nav-item:hover {
     background: #dfe3e7; /* N-90 */
 }
 
-li a {
+.nav-item a {
     color: #181c20; /* N-10 */
 }
 
 /* Router links */
-.router-link-active, .router-link-exact-active, a {
+.router-link-exact-active, a {
     text-decoration: none;
 }
 
-.router-link-active li {
+.router-link-active, .router-link-active:hover {
     background: #2c3134; /* N-20 */
     color: #edf1f5; /* N-95 */
+    text-decoration: none;
 }
