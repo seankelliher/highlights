@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <main>
+    <div class="error-text">
         <p>Sorry, the page you're looking for was not found - error 404.</p>
-    </main>
+    </div>
 </template>
 
 <style scoped>
