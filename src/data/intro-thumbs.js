@@ -48,8 +48,8 @@ const thumbs = [
         caption: "Public, city-owned swimming pools in New York City"
     },
     {
-        id: "mt-washington-temp",
-        src: "mt-washington-temp-thumb",
+        id: "mt-washington-temps",
+        src: "mt-washington-temps-thumb",
         alt: "Marine holds flag on snowy summit of Mount Washington. Photo: U.S. military or Department of Defense.",
         caption: "Average monthly temperatures atop Mt. Washington"
     },
