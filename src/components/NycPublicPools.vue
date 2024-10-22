@@ -6,7 +6,7 @@ import { links } from "../composables/repo-links.js";
     <div class="summary">
         <div class="summary-text">
             <h2 class="magenta">New York City Public Pools</h2>
-            <p class="magenta">This interface lets users explore public, city-owned swimming pools in New York City. Using data from NYC's Parks Department, it creates lists that can be filtered by borough or pool type, or a combination of the two. There is also a search bar to search for a pool by name. Returned pools appear as boxes with basic information (name, address, telephone). When clicked or tapped, the boxes "pop up" and expand to reveal more information such a pool dimensions and depth. The interface was built with Vue.js, with data stored locally. It follows the design aesthetic of NYC government's digital products.</p>
+            <p class="magenta">This interface lets users explore public, city-owned swimming pools in New York City. Using data from NYC's Parks Department, it creates a list of pools that can be filtered by borough or pool type, or a combination of the two. There is also a search bar to search for a pool by name. Returned pools appear as boxes with basic information (name, address, telephone). When clicked or tapped, the boxes "pop up" and expand to reveal more information such a pool dimensions and depth. The interface was built with Vue.js, with data stored locally. It follows the design aesthetic of NYC government's digital products.</p>
         </div>
 
         <div class="links">

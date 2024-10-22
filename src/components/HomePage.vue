@@ -60,7 +60,7 @@ onMounted(() => {
                 </p> -->
             </div>
             <div class="limit-text">
-                <p>I began these user interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly <em>Material Design</em> inspired) styling. Lastly, I wrote the code to transform the designs into fully-functioning and accessible interfaces.</p>
+                <p>I began these interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly Material Design inspired) styling. Lastly, I wrote the code to transform the designs into fully functioning and accessible interfaces.</p>
             </div>
         </div>
         <div class="projects">

@@ -6,7 +6,7 @@ import { links } from "../composables/repo-links.js";
     <div class="summary">
         <div class="summary-text">
             <h2 class="magenta">California Temperatures &amp; Precipitation</h2>
-            <p class="magenta">This interface lets users explore California's changing climate. It looks at NOAA data over a 50-year period. Specifically, it dynamically creates interactive charts that display (1) the number of days each year with temperature over 90 degrees F, and (2) the annual precipitation in inches. The interface was built with Vue.js, Chart.js, and Mapbox. Data is stored locally, which proved more reliable and efficient than continually fetching historical data from NOAA. Research was one of the most difficult aspects. NOAA has numerous weather stations. But very few had continuous records for a 50-year period.</p>
+            <p class="magenta">This interface lets users explore California's changing climate. It looks at NOAA data over a 50-year period. Specifically, it dynamically creates interactive charts that display (1) the number of days each year with temperature over 90 degrees F, and (2) the annual precipitation in inches. The interface was built with Vue.js, Chart.js, and Mapbox. Data is stored locally, which proved more reliable and efficient than continually fetching historical data from NOAA using its API. Research was challenging. NOAA has numerous weather stations. But very few had continuous records for a 50-year period.</p>
         </div>
 
         <div class="links">

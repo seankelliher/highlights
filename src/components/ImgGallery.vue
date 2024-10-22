@@ -6,7 +6,7 @@ import { links } from "../composables/repo-links.js";
     <div class="summary">
         <div class="summary-text">
             <h2 class="magenta">Image Gallery</h2>
-            <p class="magenta">This interface lets users explore images in a carousel. It loops through an object of data (file names, captions, alt tags, etc.) to dynamically create the carousel. From there, users can explore images by clicking/tapping an arrow or directly on a thumbnail. The selected thumbnail is shaded to indicate its state. The interface was built with Vue.js, with data stored locally.</p>
+            <p class="magenta">This interface lets users explore images in a carousel. It loops through an object of data (file names, captions, alt tags, etc.) to dynamically create the carousel. From there, users can navigate images by clicking/tapping directional arrows or directly on thumbnails. The selected thumbnail is shaded to indicate its state. The interface was built with Vue.js with data stored locally.</p>
         </div>
 
         <div class="links">
