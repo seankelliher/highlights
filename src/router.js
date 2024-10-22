@@ -8,7 +8,7 @@ import NycShootingIncidents from "./components/NycShootingIncidents.vue";
 import MapCoordinatesDms from "./components/MapCoordinatesDms.vue";
 import NycFirehouses from "./components/NycFirehouses.vue";
 import NycPublicPools from "./components/NycPublicPools.vue";
-import MtWashingtonTemperature from "./components/MtWashingtonTemperature.vue";
+import MtWashingtonTemp from "./components/MtWashingtonTemp.vue";
 import ImgGallery from "./components/ImgGallery.vue";
 import NotFound from "./components/NotFound.vue";
 
@@ -22,7 +22,7 @@ const routes = [
     { path: "/map-coordinates-dms", component: MapCoordinatesDms },
     { path: "/nyc-firehouses", component: NycFirehouses },
     { path: "/nyc-public-pools", component: NycPublicPools },
-    { path: "/mt-washington-temperature", component: MtWashingtonTemperature },
+    { path: "/mt-washington-temp", component: MtWashingtonTemp },
     { path: "/img-gallery", component: ImgGallery },
     { path: "/:catchAll(.*)", component: NotFound }
 ];
