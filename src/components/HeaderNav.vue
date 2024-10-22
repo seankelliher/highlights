@@ -110,7 +110,7 @@ const hideMenu = () => menu.value = false;
                 NYC Public Pools
             </RouterLink>
             <RouterLink
-                to="/mt-washington-temperature"
+                to="/mt-washington-temp"
                 class="nav-item"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
