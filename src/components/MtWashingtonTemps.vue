@@ -5,7 +5,7 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">Mt. Washington Temperature</h2>
+            <h2 class="magenta">Mt. Washington Temperatures</h2>
             <p class="magenta">This interface lets users explore data from the Mt. Washington Observatory. Specifically, it dynamically creates an interactive chart that displays average monthly temperatures over several decades. The Observatory is located on the summit of Mt. Washington in North Conway, New Hampshire and is the highest point in the Northeastern United States. The interface was built with Vue.js and Chart.js. Data was downloaded from the Observatory and stored locally.</p>
         </div>
 
