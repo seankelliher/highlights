@@ -22,12 +22,12 @@ const hideMenu = () => menu.value = false;
             @keyup.enter="toggleMenu()"
             role="button"
             tabindex="0"
-            aria-haspopup="listbox"
+            aria-haspopup="menu"
         >
             <img src="/images/menu-icon-32.svg" alt="three horizontal lines 'hamburger' menu icon">
             <figcaption hidden>icon for the website's menu</figcaption>
         </figure>
-        <nav v-if="menu" role="listbox">
+        <nav v-if="menu" role="list">
             <RouterLink
                 to="/"
                 class="nav-item"
