@@ -19,11 +19,6 @@ onMounted(() => {
         greeting.value = "Hello there!";
     }
 });
-
-// For future use. If you wanted to initially display only x number of thumbs.
-/* function modifyLimit(x) {
-    limit.value = x;
-} */
 </script>
 
 <template>
@@ -36,7 +31,7 @@ onMounted(() => {
             <figcaption hidden>avatar of friendly site owner</figcaption>
         </figure>
         <div class="intro-text">
-            <p class="magenta"><strong>{{ greeting }}</strong> Thank you for visiting and I hope you find something of interest within.</p>
+            <p class="navy"><strong>{{ greeting }}</strong> I began these interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly Material Design inspired) styling. Lastly, I wrote the code to transform the designs into fully functioning and accessible interfaces.</p>
         </div>
         <figure class="avatar">
             <img
@@ -49,38 +44,27 @@ onMounted(() => {
 
     <main>
         <div class="heading">
-            <div class="split-text">
-                <h2>UI Highlights</h2>
-                <!-- For future use, adds "See all" link. -->
-                <!-- <p
-                    v-if="limit === 5"
-                    @click="modifyLimit(10)"
-                    class="see-all">
-                        See All
-                </p> -->
-            </div>
-            <div class="limit-text">
-                <p>I began these interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly Material Design inspired) styling. Lastly, I wrote the code to transform the designs into fully functioning and accessible interfaces.</p>
-            </div>
+            <h2>User Interfaces</h2>
+            <h3>Maps, data visualization, guided work flows, directories</h3>
         </div>
         <div class="projects">
-            <figure v-for="thumb in thumbs" :key="thumb.id" class="project">
+            <div class="project-card" v-for="thumb in thumbs" :key="thumb.id">
                 <RouterLink :to="`/${thumb.id}`">
-                    <img
-                        :src="`/images/thumbs/${thumb.src}.jpg`"
-                        :alt="`${thumb.alt}`"
-                        class="rounded"
-                    >
+                    <figure class="project">
+                        <img
+                            :src="`/images/thumbs/${thumb.src}.jpg`"
+                            :alt="`${thumb.alt}`"
+                            class="rounded"
+                        >
+                        <figcaption class="project-caption">
+                            <strong>{{ thumb.headline }}</strong><br />{{ thumb.caption }}
+                        </figcaption>
+                    </figure>
                 </RouterLink>
-                <figcaption>
-                    <RouterLink :to="`/${thumb.id}`">{{ thumb.caption }}</RouterLink>
-                </figcaption>
-            </figure>
+            </div>
         </div>
     </main>
 </template>
 
 <style scoped>
 </style>
-
-
