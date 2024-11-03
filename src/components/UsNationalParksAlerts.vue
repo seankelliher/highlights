@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">US National Parks Alerts</h2>
-            <p class="magenta">This interface offers users a means to easily access alerts from the National Park Service (NPS) on conditions at any of its 471 areas. Alerts are drawn through an API managed by the NPS. The interface was built with Vue.js and Express.js. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of the National Park Service's digital products.</p>
+            <h2 class="navy">US National Parks Alerts</h2>
+            <p class="navy">This interface offers users a means to easily access alerts from the National Park Service (NPS) on conditions at any of its 471 areas. Alerts are drawn through an API managed by the NPS. The interface was built with Vue.js and Express.js. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of the National Park Service's digital products.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">

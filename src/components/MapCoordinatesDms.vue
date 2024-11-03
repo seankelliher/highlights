@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">Map Coordinates DMS</h2>
-            <p class="magenta">This interface lets users convert map coordinates from the traditional Degrees, Minutes, and Seconds (DMS) format to the Digital Degrees (DD) format used in computer-based mapping like Google Maps and Mapbox. It offers users a "step by step" guided interface to convert coordinates. It also dynamically generates a map of the location. The interface was built with Vue.js and Mapbox.</p>
+            <h2 class="navy">Map Coordinates DMS</h2>
+            <p class="navy">This interface lets users convert map coordinates from the traditional Degrees, Minutes, and Seconds (DMS) format to the Digital Degrees (DD) format used in computer-based mapping like Google Maps and Mapbox. It offers users a "step by step" guided interface to convert coordinates. It also dynamically generates a map of the location. The interface was built with Vue.js and Mapbox.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="flow-chart">

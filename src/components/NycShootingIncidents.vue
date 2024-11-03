@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">New York City Shooting Incidents</h2>
-            <p class="magenta">This interface lets users explore a dashboard and interactive map of year-to-date shooting incidents in New York City. The interface utilizes Open Data NYC's API to gather a list of individual shootings compiled by the NYPD. From there, it dynamically creates an interactive map with pins (and info pop-ups) for each shooting. It then sorts and compiles the data into statistics and populates a chart with them. The interface was built with Vue.js, Express.js, and Mapbox. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of NYC government's digital products.</p>
+            <h2 class="navy">New York City Shooting Incidents</h2>
+            <p class="navy">This interface lets users explore a dashboard and interactive map of year-to-date shooting incidents in New York City. The interface utilizes Open Data NYC's API to gather a list of individual shootings compiled by the NYPD. From there, it dynamically creates an interactive map with pins (and info pop-ups) for each shooting. It then sorts and compiles the data into statistics and populates a chart with them. The interface was built with Vue.js, Express.js, and Mapbox. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of NYC government's digital products.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">

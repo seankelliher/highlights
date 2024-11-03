@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">Global Fertility Rates</h2>
-            <p class="magenta">This interface lets users explore fertility rates around the world. Using data from the Central Intelligence Agency (CIA), it dynamically creates an interactive world map where users can toggle on/off specific rates and highlight/unhighlight the matching nations. Users can also toggle a pop-up info box for each nation which reveals its exact fertility rate. The interface also contains a list of fertility rates for all nations, a list of regional averages, and a search bar to look up a specific nation's rate. It was built with Vue.js and Mapbox, with data stored locally.</p>
+            <h2 class="navy">Global Fertility Rates</h2>
+            <p class="navy">This interface lets users explore fertility rates around the world. Using data from the Central Intelligence Agency (CIA), it dynamically creates an interactive world map where users can toggle on/off specific rates and highlight/unhighlight the matching nations. Users can also toggle a pop-up info box for each nation which reveals its exact fertility rate. The interface also contains a list of fertility rates for all nations, a list of regional averages, and a search bar to look up a specific nation's rate. It was built with Vue.js and Mapbox, with data stored locally.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">

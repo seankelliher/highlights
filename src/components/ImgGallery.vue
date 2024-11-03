@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">Image Gallery</h2>
-            <p class="magenta">This interface lets users explore images in a carousel. It loops through an object of data (file names, captions, alt tags, etc.) to dynamically create the carousel. From there, users can navigate images by clicking/tapping directional arrows or directly on thumbnails. The selected thumbnail is shaded to indicate its state. The interface was built with Vue.js with data stored locally.</p>
+            <h2 class="navy">Image Gallery</h2>
+            <p class="navy">This interface lets users explore images in a carousel. It loops through an object of data (file names, captions, alt tags, etc.) to dynamically create the carousel. From there, users can navigate images by clicking/tapping directional arrows or directly on thumbnails. The selected thumbnail is shaded to indicate its state. The interface was built with Vue.js with data stored locally.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">

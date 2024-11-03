@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">US Senate Directory</h2>
-            <p class="magenta">This interface lets users explore current United States Senators. Using data from the US Senate, users can filter senators by state, gender, party, re-election date, or any combination of these. There is also a search bar so users can search for a senator by first, last, or full name. Since some senators have less formal and more formal names, the search was built to try to accommodate these variables. For example, people can search for Bob or Robert Casey, Dick or Richard Durbin. The interface was built with Vue.js, with data stored locally.</p>
+            <h2 class="navy">US Senate Directory</h2>
+            <p class="navy">This interface lets users explore current United States Senators. Using data from the US Senate, users can filter senators by state, gender, party, re-election date, or any combination of these. There is also a search bar so users can search for a senator by first, last, or full name. Since some senators have less formal and more formal names, the search was built to try to accommodate these variables. For example, people can search for Bob or Robert Casey, Dick or Richard Durbin. The interface was built with Vue.js, with data stored locally.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">

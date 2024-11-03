@@ -5,8 +5,8 @@ import { links } from "../composables/repo-links.js";
 <template>
     <div class="summary">
         <div class="summary-text">
-            <h2 class="magenta">New York City Firehouses</h2>
-            <p class="magenta">This interface lets users explore firehouses in NYC. Using data from the FDNY, it dynamically creates an interactive map with pins (and info pop-ups) of firehouses within the five boroughs. The interface was built with Vue.js and Mapbox, with data stored remotely at Mapbox. It follows the design aesthetic of FDNY digital products.</p>
+            <h2 class="navy">New York City Firehouses</h2>
+            <p class="navy">This interface lets users explore firehouses in NYC. Using data from the FDNY, it dynamically creates an interactive map with pins (and info pop-ups) of firehouses within the five boroughs. The interface was built with Vue.js and Mapbox, with data stored remotely at Mapbox. It follows the design aesthetic of FDNY digital products.</p>
         </div>
 
         <div class="links">
@@ -37,6 +37,7 @@ import { links } from "../composables/repo-links.js";
     <main>
         <div class="heading">
             <h2>Wireframes</h2>
+            <h3>Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure class="wireframe">
