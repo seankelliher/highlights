@@ -2,7 +2,6 @@
 import { thumbs } from "../data/intro-thumbs.js";
 import { ref, onMounted } from "vue";
 
-// const limit = ref(10);
 const greeting = ref("");
 
 onMounted(() => {
@@ -10,13 +9,13 @@ onMounted(() => {
     const time = event.toLocaleTimeString("it-IT");
     const hours = time.substring(0,2);
     if (hours < 12 ) {
-        greeting.value = "Good morning!";
+        greeting.value = "Good morning,";
     } else if (hours >= 12 && hours < 18) {
-        greeting.value = "Good afternoon!";
+        greeting.value = "Good afternoon,";
     } else if (hours >= 18) {
-        greeting.value = "Good evening!";
+        greeting.value = "Good evening,";
     } else {
-        greeting.value = "Hello there!";
+        greeting.value = "Hello there,";
     }
 });
 </script>
@@ -31,7 +30,7 @@ onMounted(() => {
             <figcaption hidden>avatar of friendly site owner</figcaption>
         </figure>
         <div class="intro-text">
-            <p class="navy"><strong>{{ greeting }}</strong> I began these interfaces as simple sketches on paper and research in spreadsheets. Next, I built more detailed wireframes, and then wireframes with (mostly Material Design inspired) styling. Lastly, I wrote the code to transform the designs into fully functioning and accessible interfaces.</p>
+            <p class="navy"><strong>{{ greeting }}</strong> The projects below began as ideas. I did research and drew sketches on paper. From there, I built accurate un-styled and then styled wireframes with Figma, using mostly Material Design as a handbook for colors, layout, and typography. Next, I selected technology, coded, and tested the interfaces across viewports and for accessibility.</p>
         </div>
         <figure class="avatar">
             <img
@@ -49,7 +48,7 @@ onMounted(() => {
         </div>
         <div class="projects">
             <div class="project-card" v-for="thumb in thumbs" :key="thumb.id">
-                <RouterLink :to="`/${thumb.id}`">
+                <RouterLink :to="`/${thumb.id}`" aria-label="project thumbnail, leads to project page">
                     <figure class="project">
                         <img
                             :src="`/images/thumbs/${thumb.src}.jpg`"
