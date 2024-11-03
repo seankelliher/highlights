@@ -10,13 +10,12 @@ onMounted(() => {
 
 <template>
     <footer>
-        <figure class="git-icon">
-            <img src="/images/git-icon.png" alt="icon for Github">
-            <figcaption hidden>Octocat icon for GitHub.</figcaption>
-        </figure>
-        <div class="footer-text">
-            <p><a href="https://github.com/seankelliher" target="_blank">GitHub</a> | <span id="place"></span></p> 
-        </div>
+        <button id="place">
+            Email me
+        </button>
+        <button>
+            <a href="https://github.com/seankelliher" target="_blank">GitHub</a>
+        </button>
     </footer>
 </template>
 
