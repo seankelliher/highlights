@@ -1,6 +1,5 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
-    margin-top: 0;
     margin-bottom: 0;
     background: #f7f9ff; /* N-98 */
 }
@@ -31,8 +30,7 @@ header {
     width: 95%;
     margin: 0;
     padding: 0 2.5%;
-    background: #2c3134;  /* N-20 */
-    border-bottom: 2px solid #000; /* Scrim */
+    border-bottom: 2px solid #eaeef2;  /* N-94 */
     position: relative;
     flex: initial;
     display: flex;
@@ -45,8 +43,7 @@ header::before {
     content: "";
     position: absolute;
     inset: -2px calc((100vw - 100%) / -2);
-    background: #2c3134;  /* N-20 */
-    border-bottom: 2px solid #000; /* Scrim */
+    border-bottom: 2px solid #eaeef2;  /* N-94 */
     z-index: -1;
 }
 
@@ -77,6 +74,7 @@ nav {
     margin: 2em 2.5%;
     padding: 0 2.5%;
     background: #d9e2ff; /* S-90 */
+    background: #cae6ff;
     border-radius: 6px;
     box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
     flex: initial;
@@ -97,9 +95,8 @@ figure.avatar {
     /* width: 35%; */
     margin: 0;
     padding: 0 2.5%;
-    border: 2px solid #001944; /* S-10 */
+    /* border: 2px solid #001944; S-10 */
     border-radius: 6px;
-    text-align: center;
     flex: initial;
 }
 
@@ -155,16 +152,16 @@ figure.avatar {
     }
 
     .intro-text {
-        width: 35%;
+        width: 45%;
     }
 }
 
 main {
-    width: 90%;
+    width: 95%;
     margin: 0 2.5%;
-    padding: 0 2.5%;
-    border: 2px solid #e4e9ec; /* N-92 */
-    border-radius: 6px;
+    padding: 0;
+    /* border: 2px solid #e4e9ec;  N-92
+    border-radius: 6px;  */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -183,25 +180,6 @@ main {
     align-items: flex-start;
 }
 
-.split-text {
-    width: 100%;
-    margin: 0;
-    padding:0;
-    flex: initial;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.limit-text {
-    width: 100%;
-    max-width: 700px;
-    margin: 0;
-    padding:0;
-    flex: initial;
-}
-
 /* These are the thumbnails on homepage */
 .projects {
     width: 100%;
@@ -212,10 +190,23 @@ main {
     flex-flow: row wrap;
 }
 
-figure.project {
-    max-width: 220px;
+.project-card {
     margin: 0 0 2em; /* Longhand 0 0 2em 0 */
+    background: #eaeef2; /* N-94 */
+    border-radius: 6px;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+figure.project {
+    width: 100%;
+    max-width: 220px;
+    margin: 0;
     padding: 0;
+    background: #eaeef2; /* N-94 */
     flex: initial;
 }
 
@@ -224,38 +215,42 @@ figure.project {
         place-content: flex-start center; /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 68%; 
+    .project-card {
+        width: 60%;
+        padding: 1em 5%;
     }
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
     .projects {
-        place-content: stretch space-evenly; /* align-content + justify-content */
+        place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 45%;
+    .project-card {
+        width: 42%;
+        padding: 1em 2.5%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
     .projects {
-        place-content: stretch space-evenly; /* align-content + justify-content */
+        place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 44%;
+    .project-card {
+        width: 38%;
+        padding: 1em 5%;
     }
 }
 
 @media (min-width: 600px) and (max-width: 699px) {
     .projects {
-        place-content: stretch space-evenly; /* align-content + justify-content */
+        place-content: stretch space-evenly /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 36%; 
+    .project-card {
+        width: 36%;
+        padding: 1em 5%;
     }
 }
 
@@ -264,8 +259,9 @@ figure.project {
         place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 31%;
+    .project-card {
+        width: 26%;
+        padding: 1em 2.5%;
     }
 }
 
@@ -274,8 +270,9 @@ figure.project {
         place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    figure.project {
-        width: 27%; 
+    .project-card {
+        width: 24%;
+        padding: 1em 2.5%;
     }
 }
 
@@ -284,38 +281,25 @@ figure.project {
         place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    .projects::after {
-        content: "";
-        min-width: 49.4%;
-    }
-
-    figure.project {
-        width: 24%; 
+    .project-card {
+        width: 24%;
+        padding: 1em 2.5%;
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1099px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
     .projects {
         place-content: stretch space-between; /* align-content + justify-content */
     }
 
+    .project-card {
+        width: 18%;
+        padding: 1em 2.5%;
+    }
+
     .projects::after {
         content: "";
-        min-width: 48%;
-    }
-
-    figure.project {
-        width: 22%;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-    .projects {
-        place-content: stretch space-between; /* align-content + justify-content */
-    }
-
-    figure.project {
-        width: 18%; 
+        min-width: 48.6%;
     }
 }
 
@@ -324,8 +308,14 @@ figure.project {
         place-content: stretch space-between; /* align-content + justify-content */
     }
 
-    figure.project {
+    .project-card {
         width: 17%;
+        padding: 1em 2.5%;
+    }
+
+    .projects::after {
+        content: "";
+        min-width: 48%;
     }
 }
 
@@ -335,7 +325,7 @@ figure.project {
     margin: 2em 2.5%;
     padding: 0 2.5%;
     border-radius: 6px;
-    background: #d9e2ff; /* S-90 */
+    background: #cae6ff; /* P-90 */
     box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
     flex: initial;
     display: flex;
@@ -361,7 +351,7 @@ figure.project {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    box-shadow: 2px 2px 4px 1px #afc6ff; /*  S-80 */
+    box-shadow: 2px 2px 4px 1px #96cdf8; /* P-80 */
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
@@ -452,7 +442,7 @@ figure.project {
     width: 90%;
     margin: 0;
     padding: 0 5%;
-    border-bottom: 1px solid #465d91; /* S-40 */
+    border-bottom: 1px solid #72787e; /* NV-50 */
     flex: initial;
 }
 
@@ -508,12 +498,12 @@ footer {
     width: 95%;
     margin: 2em 0 0; /* Longhand 2em 0 0 0 */
     padding: 1em 2.5%;
-    background: #d6dbde;  /* N-87 */
+    background: #eaeef2; /* N-94 */
     border-top: 2px solid #c1c7ce; /* NV-80 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -522,7 +512,7 @@ footer::before {
     content: "";
     position: absolute;
     inset: -2px calc((100vw - 100%) / -2);
-    background: #d6dbde;  /* N-87 */
+    background: #eaeef2; /* N-94 */
     border-top: 2px solid #c1c7ce; /* NV-80 */
     z-index: -1;
 }
@@ -544,63 +534,100 @@ figure.git-icon {
     flex: initial;
 }
 
-.footer-text {
-    width: 65%;
-    margin: 0;
-    padding: 0 5%;
+button {
+    width: 100px;
+    margin: 0 20px;
+    background: #2c3134; /* N-20 */
+    color: #edf1f5; /* N-95 */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em; /* 16px */
+    line-height: 1.6;
+    border: none;
+    border-radius: 12px;
+}
+
+button a {
+    color: #fff; /* P-100 */
+}
+
+button:hover {
+    background: #171c1f; /* N-10 */
 }
 
 /* FONTS */
 h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.25em; /* 20px */
     line-height: 1.5;
-    font-weight: 600;
-    color: #edf1f5; /* N-95 */
-    display: inline-flex; /* Keeps hyerlink to only text */
+    color: #171c1f; /* N-10 */
+    display: inline-flex; /* Keeps hyperlink to only text */
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%; /* TESTING */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.375em; /* 22px */
     line-height: 1.5;
-    font-weight: 600;
-    color: #181c20; /* N-10 */
+    color: #171c1f; /* N-10 */
+    margin-bottom: 0.25em;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em; /* 16px */
+    line-height: 1.4;
+    color: #171c1f; /* N-10 */
+    margin-top: 0;
 }
 
 p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em; /* 16px */
-    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: #181c20; /* N-10 */
+    font-style: normal;
+    font-size: 1.125em; /* 18px */
+    line-height: 1.8;
+    color: #171c1f; /* N-10 */
 }
 
 p a {
-    color: #181c20; /* N-10 */
+    color: #171c1f; /* N-10 */
     text-decoration: underline;
 }
 
-.magenta {
-    color: #001944; /* S-10 */
+.navy {
+    color: #001e2f; /* P-10 */
 }
 
 figcaption {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 0.9375em; /* 15px */
     line-height: 1.5;
-    font-weight: 400;
-    color: #41474d; /* NV-30 */
-    text-align: center;
+    color: #171c1f; /* N-10 */
 }
 
 figcaption a {
-    color: #41474d; /* NV-30 */
+    color: #171c1f; /* N-10 */
+}
+
+/* For figcaption on projects */
+.project-caption {
+    padding: 0.5em 0;
+    text-align: left;
 }
 
 /* For figcaption on wireframes */
 .wire-caption {
-    padding: 2.5% 1em;
+    padding: 1em 2.5%;
     text-align: left;
 }
 
@@ -610,28 +637,31 @@ dl {
 }
 
 dt {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 1em; /* 16px */
     line-height: 1.5;
-    font-weight: 400;
-    color: #465d91; /* S-40 */
+    color: #171c1f; /* N-10 */
 }
 
 dd {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 0.875em; /* 14px */
     line-height: 1.4;
-    font-weight: 400;
     margin-left: 0;
-    color: #465d91; /* S-40 */
+    color: #171c1f; /* N-10 */
 }
 
 .nav-item {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 1em; /* 16px */
     line-height: 2.5;
-    font-weight: 500;
-    color: #181c20; /* N-10 */
+    color: #171c1f; /* N-10 */
     padding-left: 1.5em;
     padding-right: 1.5em;
     display: inline-flex;
@@ -643,7 +673,7 @@ dd {
 }
 
 .nav-item a {
-    color: #181c20; /* N-10 */
+    color: #171c1f; /* N-10 */
 }
 
 /* Router links */
@@ -651,8 +681,8 @@ dd {
     text-decoration: none;
 }
 
-.router-link-active, .router-link-active:hover {
-    background: #2c3134; /* N-20 */
+nav .router-link-active, nav .router-link-active:hover {
+    background: #2c3134;  /* N-20 */
     color: #edf1f5; /* N-95 */
     text-decoration: none;
 }
