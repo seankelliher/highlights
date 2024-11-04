@@ -315,6 +315,7 @@ figure.project {
 
 /* Pages for wireframes */
 .summary {
+    width: 90%;
     margin: 2em 2.5%;
     padding: 0 2.5%;
     border-radius: 6px;
