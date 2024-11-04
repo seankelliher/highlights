@@ -5,10 +5,23 @@ import { ref } from "vue";
 const menu = ref(false);
 
 // If user, toggles menu on/off.
-const toggleMenu = () => menu.value ? menu.value = false : menu.value = true;
+const toggleMenu = () => {
+    const body = document.querySelector("body");
+    if (menu.value === false) {
+        menu.value = true;
+        body.style.overflow = "hidden";
+    } else if (menu.value === true) {
+        menu.value = false;
+        body.style.overflow = "scroll";
+    }
+};
 
 // Automatically hides menu after user click item within it.
-const hideMenu = () => menu.value = false;
+const hideMenu = () => {
+    menu.value = false;
+    const body = document.querySelector("body");
+    body.style.overflow = "scroll";
+};
 </script>
 
 <template>
