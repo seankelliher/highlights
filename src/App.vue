@@ -6,7 +6,8 @@ import FooterPart from "./components/FooterPart.vue";
 <template>
     <div id="container">
         <HeaderNav />
-        <RouterView />
+        <!-- <RouterView :key="$route.path" /> -->
+        <RouterView :key="$route.path" />
         <FooterPart />
     </div>
 </template>
