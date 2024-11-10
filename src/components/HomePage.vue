@@ -1,5 +1,5 @@
 <script setup>
-import { thumbs } from "../data/intro-thumbs.js";
+import { contents } from "../data/contents-data.js";
 import { ref, onMounted } from "vue";
 
 const greeting = ref("");
@@ -22,41 +22,41 @@ onMounted(() => {
 
 <template>
     <div class="intro">
-        <figure class="avatar">
+        <figure class="intro-image">
             <img
-                src="/images/avatar-design.png"
+                src="/images/avatars/avatar-persona.png"
                 alt="illustration, man with scarf"
             >
             <figcaption hidden>avatar of friendly site owner</figcaption>
         </figure>
         <div class="intro-text">
-            <p class="navy"><strong>{{ greeting }}</strong> The projects below began as ideas. I did research and drew sketches on paper. From there, I built accurate un-styled and then styled wireframes with Figma, using mostly Material Design as a handbook for colors, layout, and typography. Next, I selected technology, coded, and tested the interfaces across viewports and for accessibility.</p>
+            <p class="roboto-serif-four"><span class="greeting-msg roboto-serif-seven">{{ greeting }}</span> These projects below started with research and sketches on paper. From there, I built wireframes with Figma, using mostly Material Design as a handbook for colors, layout, and typography. Next, I selected technology, coded, and tested the interfaces across viewports and for accessibility.</p>
         </div>
-        <figure class="avatar">
+        <figure class="intro-image">
             <img
-                src="/images/flower-petals-few.png"
-                alt="illustration, flower with colorful petals"
+                src="/images/avatars/avatar-target.png"
+                alt="cute colorful colored circles"
             >
-            <figcaption hidden>a pretty flower</figcaption>
+            <figcaption hidden>avatar, playful on target</figcaption>
         </figure>
     </div>
 
     <main>
         <div class="heading">
-            <h2>User Interfaces</h2>
-            <h3>Maps, data visualization, guided work flows, directories</h3>
+            <h2 class="bevan-regular">User Interfaces</h2>
+            <h3 class="roboto-serif-four">Maps, data visualization, guided work flows, directories</h3>
         </div>
         <div class="projects">
-            <div class="project-card" v-for="thumb in thumbs" :key="thumb.id">
-                <RouterLink :to="`/${thumb.id}`" aria-label="project thumbnail, leads to project page">
-                    <figure class="project">
+            <div class="project-card" v-for="content in contents" :key="content.id">
+                <RouterLink :to="`/projects/${content.id}`" aria-label="project thumbnail, leads to project page">
+                    <figure class="project-image">
                         <img
-                            :src="`/images/thumbs/${thumb.src}.jpg`"
-                            :alt="`${thumb.alt}`"
+                            :src="`/images/scenes/${content.src}-thumb.jpg`"
+                            :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="project-caption">
-                            <strong>{{ thumb.headline }}</strong><br />{{ thumb.caption }}
+                        <figcaption class="project-caption roboto-serif-four">
+                            <strong>{{ content.thumbHead }}</strong>: {{ content.thumbSub }}
                         </figcaption>
                     </figure>
                 </RouterLink>
