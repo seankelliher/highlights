@@ -27,7 +27,7 @@ const hideMenu = () => {
 <template>
     <header>
         <RouterLink to="/">
-            <h1>Sean Kelliher</h1>
+            <h1 class="bevan-regular">Sean Kelliher</h1>
         </RouterLink>
         <figure
             class="menu-icon"
@@ -43,7 +43,7 @@ const hideMenu = () => {
         <nav v-if="menu" role="list">
             <RouterLink
                 to="/"
-                class="nav-item"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -51,44 +51,44 @@ const hideMenu = () => {
                 Home
             </RouterLink>
             <RouterLink
-                to="/us-national-parks-alerts"
-                class="nav-item"
+                to="/projects/us-national-parks-alerts"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                 National Park Alerts
+                US National Parks
             </RouterLink>
             <RouterLink
-                to="/global-fertility-rates"
-                class="nav-item"
+                to="/projects/global-fertility-rates"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                Global Fertility Rates
+                Global Fertility
             </RouterLink>
             <RouterLink
-                to="/us-senate-directory"
-                class="nav-item"
+                to="/projects/us-senate-directory"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                US Senate Directory
+                US Senate
             </RouterLink>
             <RouterLink
-                to="/california-temps-precip"
-                class="nav-item"
+                to="/projects/california-temps-precip"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                California Temps Precip
+                Calif. Temps Precip
             </RouterLink>
             <RouterLink
-                to="/nyc-shooting-incidents"
-                class="nav-item"
+                to="/projects/nyc-shooting-incidents"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -96,8 +96,8 @@ const hideMenu = () => {
                 NYC Shootings
             </RouterLink>
             <RouterLink
-                to="/map-coordinates-dms"
-                class="nav-item"
+                to="/projects/map-coordinates-dms"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -105,8 +105,8 @@ const hideMenu = () => {
                 Map Coordinates
             </RouterLink>
             <RouterLink
-                to="/nyc-firehouses"
-                class="nav-item"
+                to="/projects/nyc-firehouses"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -114,8 +114,8 @@ const hideMenu = () => {
                 NYC Firehouses
             </RouterLink>
             <RouterLink
-                to="/nyc-public-pools"
-                class="nav-item"
+                to="/projects/nyc-public-pools"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -123,8 +123,8 @@ const hideMenu = () => {
                 NYC Public Pools
             </RouterLink>
             <RouterLink
-                to="/mt-washington-temps"
-                class="nav-item"
+                to="/projects/mt-washington-temps"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -132,8 +132,8 @@ const hideMenu = () => {
                 Mt. Washington Temps
             </RouterLink>
             <RouterLink
-                to="/img-gallery"
-                class="nav-item"
+                to="/projects/img-gallery"
+                class="nav-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
