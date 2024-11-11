@@ -1,0 +1,21 @@
+--------------------
+FONTS
+--------------------
+
+BEVAN
+https://fonts.google.com/specimen/Bevan?query=bevan
+
+bevan-regular
+font-weight: 400;
+font-style: normal;
+
+--------------------
+
+ROBOTO SERIF
+https://fonts.google.com/specimen/Roboto+Serif
+
+roboto-serif
+font-weight: <uniquifier>;
+font-style: normal;
+
+NOTE: this is a variable font, which can be adjusted: font-weights 100 - 900.
