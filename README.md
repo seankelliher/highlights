@@ -1,4 +1,4 @@
-[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/highlights?style=flat-square)](/LICENSE.txt)
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/highlights)](/LICENSE.txt)
 ## Highlights
 
 Highlights or portfolio of projects, made with Vue.js.
