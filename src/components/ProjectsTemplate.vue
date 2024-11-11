@@ -61,7 +61,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
             >
                 <figure class="summary-supporting-image">
                     <img
-                        src="`/images/avatars/avatar-gears.jpg`"
+                        src="/images/avatars/avatar-gears.jpg"
                         alt="cute colorful gear"
                     >
                     <figcaption hidden>avatar, machinery working</figcaption>
@@ -83,7 +83,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
             >
                 <figure class="summary-supporting-image">
                     <img
-                        src="`/images/avatars/avatar-gears.jpg`"
+                        src="/images/avatars/avatar-gears.jpg"
                         alt="cute colorful gear"
                     >
                     <figcaption hidden>avatar, machinery working</figcaption>
@@ -105,7 +105,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
             >
                 <figure class="summary-supporting-image">
                     <img
-                        src="`/images/avatars/avatar-gears.jpg`"
+                        src="/images/avatars/avatar-gears.jpg"
                         alt="cute colorful gear"
                     >
                     <figcaption hidden>avatar, machinery working</figcaption>
@@ -125,7 +125,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
             >
                 <figure class="summary-supporting-image">
                     <img
-                        src="`/images/avatars/avatar-discs.jpg`"
+                        src="/images/avatars/avatar-discs.jpg"
                         alt="cute colorful discs"
                     >
                     <figcaption hidden>avatar, discs for storage</figcaption>
@@ -141,7 +141,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
             <div class="summary-supporting-card">
                 <figure class="summary-supporting-image">
                     <img
-                        src="`/images/avatars/avatar-dials.jpg`"
+                        src="/images/avatars/avatar-dials.jpg"
                         alt="cute colorful dials and buttons"
                     >
                     <figcaption hidden>avatar, dials and buttons for technology</figcaption>
