@@ -5,11 +5,15 @@ Highlights or portfolio of projects, made with Vue.js.
 
 ## Project Status
 
-Project meets general accessibility (WACG) and cross-browser requirements. More testing with a dedicated services (e.g., Sauce Labs) would be helpful if deploying to production.
+TESTING: Testing for bugs, optimization, and accessibility.
 
 ## Project Screen Shots
 
-Screen shots to come.
+* Homepage
+![screen shot of project](/screenshots/highlights-screenshot1.png?s=600)
+
+* Sample project page
+![screen shot of project](/screenshots/highlights-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
 
@@ -34,6 +38,6 @@ Visit the localhost port displayed in the terminal after running `npm run dev`.
 * Fonts and icons from [Google Fonts](https://fonts.google.com).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
 * Avatars created with [Canva](https://www.canva.com/create/avatars/).
-* See [NOTES.txt](https://github.com/seankelliher/highlights/blob/main/NOTES.txt) for the sources of images used on home page.
+* See [images.txt](https://github.com/seankelliher/highlights/blob/main/notes/images.txt) for the sources of images.
 * Wireframes created with [Figma](https://www.figma.com).
 * Shields from [Shields](https://shields.io).
