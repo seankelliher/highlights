@@ -29,7 +29,10 @@ const hideMenu = () => {
         <RouterLink to="/">
             <h1 class="bevan-regular">Sean Kelliher</h1>
         </RouterLink>
+
+        <!-- Menu "hamburger" icon -->
         <figure
+            v-if="!menu"
             class="menu-icon"
             @click="toggleMenu()"
             @keyup.enter="toggleMenu()"
@@ -40,6 +43,22 @@ const hideMenu = () => {
             <img src="/images/menu-icon-32.svg" alt="three horizontal lines 'hamburger' menu icon">
             <figcaption hidden>icon for the website's menu</figcaption>
         </figure>
+
+        <!-- Close "x" icon -->
+        <figure
+            v-if="menu"
+            class="menu-icon"
+            @click="toggleMenu()"
+            @keyup.enter="toggleMenu()"
+            role="button"
+            tabindex="0"
+            aria-haspopup="menu"
+        >
+            <img src="/images/close-icon-32.svg" alt="the letter 'x'">
+            <figcaption hidden>icon to close an open dialogue</figcaption>
+        </figure>
+
+        <!-- Navigation -->
         <nav v-if="menu" role="list">
             <RouterLink
                 to="/"
