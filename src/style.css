@@ -62,7 +62,7 @@ figure.menu-icon:hover {
     cursor: pointer;
 }
 
-/* Pop-up navigation */
+/* Pop-up menu */
 nav {
     width: 15em;
     margin: 0;
@@ -643,8 +643,8 @@ li {
     color: #171c1f; /* N-10 */
 }
 
-/* Font items in header and nav */
-.nav-item {
+/* Font items within nav (aka menu) */
+.menu-item {
     font-size: 1em; /* 16px */
     line-height: 2.5;
     color: #171c1f; /* N-10 */
@@ -654,11 +654,11 @@ li {
     width: 12em;
 }
 
-.nav-item:hover {
+.menu-item:hover {
     background: #dfe3e7; /* N-90 */
 }
 
-.nav-item a {
+.menu-item a {
     color: #171c1f; /* N-10 */
 }
 

@@ -1,22 +1,16 @@
 <script setup>
-//import NavPart from "./NavPart.vue";
 import { ref } from "vue";
 
 const menu = ref(false);
 
-// If user, toggles menu on/off.
-const toggleMenu = () => {
+// Opens menu, displays "x" close icon, makes body NOT scrollable.
+const showMenu = () => {
+    menu.value = true;
     const body = document.querySelector("body");
-    if (menu.value === false) {
-        menu.value = true;
-        body.style.overflow = "hidden";
-    } else if (menu.value === true) {
-        menu.value = false;
-        body.style.overflow = "scroll";
-    }
+    body.style.overflow = "hidden";
 };
 
-// Automatically hides menu after user click item within it.
+// Closes menu, displays "hamburger" icon, makes body scrollable.
 const hideMenu = () => {
     menu.value = false;
     const body = document.querySelector("body");
@@ -34,8 +28,8 @@ const hideMenu = () => {
         <figure
             v-if="!menu"
             class="menu-icon"
-            @click="toggleMenu()"
-            @keyup.enter="toggleMenu()"
+            @click="showMenu()"
+            @keyup.enter="showMenu()"
             role="button"
             tabindex="0"
             aria-haspopup="menu"
@@ -48,8 +42,8 @@ const hideMenu = () => {
         <figure
             v-if="menu"
             class="menu-icon"
-            @click="toggleMenu()"
-            @keyup.enter="toggleMenu()"
+            @click="hideMenu()"
+            @keyup.enter="hideMenu()"
             role="button"
             tabindex="0"
             aria-haspopup="menu"
@@ -58,11 +52,11 @@ const hideMenu = () => {
             <figcaption hidden>icon to close an open dialogue</figcaption>
         </figure>
 
-        <!-- Navigation -->
+        <!-- Menu - using "nav" tag because "menu" should house <li> -->
         <nav v-if="menu" role="list">
             <RouterLink
                 to="/"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -71,7 +65,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/us-national-parks-alerts"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -80,7 +74,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/global-fertility-rates"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -89,7 +83,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/us-senate-directory"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -98,7 +92,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/california-temps-precip"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -107,7 +101,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-shooting-incidents"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -116,7 +110,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/map-coordinates-dms"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -125,7 +119,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-firehouses"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -134,7 +128,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-public-pools"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -143,7 +137,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/mt-washington-temps"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -152,7 +146,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/img-gallery"
-                class="nav-item roboto-serif-five"
+                class="menu-item roboto-serif-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
