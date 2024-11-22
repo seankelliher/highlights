@@ -116,9 +116,19 @@ const contents = [
                 caption: "Wireframe 1B - Wireframe with styling and images"
             },
             {   
-                src: "us-senate-directory1c",
-                alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1C - Independent senators selected"
+                src: "us-senate-directory2a",
+                alt: "wireframe drawing of pop-up menu, without styling",
+                caption: "Wireframe 2A - Wireframe of pop-up menu for filtering"
+            },
+            {   
+                src: "us-senate-directory2b",
+                alt: "wireframe drawing of pop-up menu, with styling",
+                caption: "Wireframe 2B - Wireframe of pop-up menu with styling"
+            },
+            {   
+                src: "us-senate-directory3a",
+                alt: "wireframe drawing of independent senators search result, with styling",
+                caption: "Wireframe 3A - Independent Senators selected"
             }
         ]
     },
