@@ -1,3 +1,12 @@
+/* @link https://utopia.fyi/type/calculator?c=320,15,1.125,1280,16,1.125,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+    --fs-1: clamp(0.8333rem, 0.8148rem + 0.0926vw, 0.8889rem);
+    --fs0: clamp(0.9375rem, 0.9167rem + 0.1042vw, 1rem);
+    --fs1: clamp(1.0547rem, 1.0313rem + 0.1172vw, 1.125rem);
+    --fs2: clamp(1.1865rem, 1.1602rem + 0.1318vw, 1.2656rem);
+    --fs3: clamp(1.3348rem, 1.3052rem + 0.1483vw, 1.4238rem);
+}
+
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
     margin-top: 0;
@@ -499,7 +508,7 @@ button {
     border: 1px solid #001944; /* S-10 */
     border-radius: 12px;
     color: #001944; /* S-10 */
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 1.6;
 }
 
@@ -560,7 +569,7 @@ button:hover {
 
 /* Headings, H-tags */
 h1 {
-    font-size: 1.25em; /* 20px */
+    font-size: var(--fs2);
     line-height: 1.5;
     display: inline-flex; /* Keeps hyperlink to only text */
     color: #001944; /* S-10 */
@@ -568,30 +577,22 @@ h1 {
 
 h2 {
     width: 100%;
-    font-size: 1.5em; /* 24px */
+    font-size: var(--fs3);
     line-height: 1.5;
     margin-bottom: 0.25em;
     color: #171c1f; /* N-10 */
 }
 
 h3 {
-    font-size: 1.2em; /* 16px */
+    font-size: var(--fs1);
     line-height: 1.4;
     margin-top: 0;
-    color: #171c1f; /* N-10 */
-}
-
-h4 {
-    font-size: 1.125em; /* 18px */
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: 0;
     color: #171c1f; /* N-10 */
 }
 
 /* P-tag */
 p {
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 1.8;
     color: #171c1f; /* N-10 */
 }
@@ -603,7 +604,7 @@ p a {
 
 /* FIGCAPTIONS AND RELATED */
 figcaption {
-    font-size: 0.9375em; /* 15px */
+    font-size: var(--fs-1);
     line-height: 1.5;
     color: #41474d; /* NV-30 */
 }
@@ -627,13 +628,13 @@ dl {
 }
 
 dt {
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 1.8;
     color: #171c1f; /* N-10 */
 }
 
 dd {
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 1.6;
     margin-left: 0;
     color: #171c1f; /* N-10 */
@@ -645,14 +646,14 @@ ul {
 }
 
 li {
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 1.8;
     color: #171c1f; /* N-10 */
 }
 
 /* Font items within nav (aka menu) */
 .menu-item {
-    font-size: 1em; /* 16px */
+    font-size: var(--fs0);
     line-height: 2.5;
     color: #171c1f; /* N-10 */
     padding-left: 1.5em;
@@ -670,7 +671,7 @@ li {
 }
 
 span.greeting-msg {
-    font-size: 1.25em; /* 20px */
+    font-size: var(--fs2);
     line-height: 1.44; /* keeps line height same as adjoining p tag */
 }
 
