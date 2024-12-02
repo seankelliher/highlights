@@ -226,32 +226,37 @@ const contents = [
             {   
                 src: "map-coordinates-dms1",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1 - step 1, enter your coordinates or choose a sample location"
+                caption: "Wireframe 1 - step 1, introduction"
             },
             {   
                 src: "map-coordinates-dms2",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2 - step 2, longitude coordinates"
+                caption: "Wireframe 2 - step 2, enter your coordinates or choose a sample location"
             },
             {   
                 src: "map-coordinates-dms3",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 3 - step 3, latitude coordinates"
+                caption: "Wireframe 3 - step 3, longitude coordinates"
             },
             {   
                 src: "map-coordinates-dms4",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 4 - step 4, level of precision"
+                caption: "Wireframe 4 - step 4, latitude coordinates"
             },
             {   
                 src: "map-coordinates-dms5",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 5 - step 5, review the data"
+                caption: "Wireframe 5 - step 5, level of precision"
             },
             {   
                 src: "map-coordinates-dms6",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 6 - step 6, see converted coordinates and map of location"
+                caption: "Wireframe 6 - step 6, review the data"
+            },
+            {   
+                src: "map-coordinates-dms7",
+                alt: "wireframe drawing of page, with styling",
+                caption: "Wireframe 7 - step 7, see converted coordinates and map of location"
             }
         ]
     },
