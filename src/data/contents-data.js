@@ -305,7 +305,7 @@ const contents = [
         thumbHead: "NYC Pools",
         thumbSub: "Public, city owned swimming pools",
         caption: "Swimming pool in Astoria Park, Queens. Photo: Global Jet",
-        summary: "This interface lets users explore public, city-owned swimming pools in New York City. Using data from NYC's Parks Department, it creates a list of pools that can be filtered by borough or pool type, or a combination of the two. There is also a search bar to search for a pool by name. Returned pools appear as boxes with basic information (name, address, telephone). When clicked or tapped, the boxes pop up and expand to reveal more information such a pool dimensions and depth. The interface was built with Vue.js, with data stored locally. It follows the design aesthetic of NYC government's digital products.",
+        summary: "This interface lets users explore public, city-owned swimming pools in New York City. Using data from NYC's Parks Department, it creates a list of pools that can be filtered by borough, pool type, swim type, or a combination of the three. There is also a search bar to search for a pool by name. Returned pools appear as boxes with basic information (name, address, telephone). When clicked or tapped, the boxes pop up and expand to reveal more information such a pool dimensions and depth. The interface was built with Vue.js, with data stored locally. It follows the design aesthetic of NYC government's digital products.",
         platform: "Netlify",
         buttons: {
             netlify: true,
@@ -328,22 +328,17 @@ const contents = [
             {   
                 src: "nyc-public-pools2a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 2A - Initial wireframe depicting indoor pools in Queens"
+                caption: "Wireframe 2A - Initial wireframe depicting indoor swimming pools in Queens"
             },
             {   
                 src: "nyc-public-pools2b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2B - Indoor Queens wireframe with styling and image"
+                caption: "Wireframe 2B - Queens wireframe with styling and image"
             },
             {   
                 src: "nyc-public-pools3a",
-                alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 3A - Initial wireframe with pop up details on pool displayed"
-            },
-            {   
-                src: "nyc-public-pools3b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 3B - Pop up wireframe with styling and image"
+                caption: "Wireframe 3A - Queens wireframe with pool details"
             }
         ]
     },
