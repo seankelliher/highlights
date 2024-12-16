@@ -449,7 +449,6 @@ figure.summary-supporting-image {
 figure.wireframe {
     margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
-    border: 2px solid #c1c7ce; /* NV-80 */
     border-radius: 6px;
     box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
     flex: initial;
