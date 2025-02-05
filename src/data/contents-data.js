@@ -16,7 +16,7 @@ const contents = [
             herokuComplex: true,
             herokuComplexId: "fa601db96052"
         },
-        techs: ["Vue.js", "Express.js (Node.js server)", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "National Park Service API"],
+        techs: "Vue, Vite, Express, NPS API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "us-national-parks-alerts1a",
@@ -67,7 +67,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Mapbox", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "Central Intelligence Agency data"],
+        techs: "Vue, Vite, Mapbox, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "global-fertility-rates1a",
@@ -103,7 +103,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "United States Senate data"],
+        techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "us-senate-directory1a",
@@ -149,7 +149,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Mapbox", "Chart.js", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "National Oceanic and Atmospheric Administration API"],
+        techs: "Vue.js, Vite, Mapbox, Chart.js, NOAA API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "california-temps-precip1a",
@@ -180,7 +180,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Express.js (Node.js server)", "Mapbox", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "Open Data NYC API"],
+        techs: "Vue, Vite, Express, Mapbox, Open Data NYC API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "nyc-shooting-incidents1a",
@@ -221,7 +221,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Mapbox", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design"],
+        techs: "Vue, Vite, Mapbox, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "map-coordinates-dms1",
@@ -277,7 +277,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Mapbox", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "Open Data NYC API"],
+        techs: "Vue.js, Vite, Mapbox, Open Data NYC API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "nyc-firehouses1a",
@@ -313,7 +313,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "NYC Parks Department data"],
+        techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "nyc-public-pools1a",
@@ -359,7 +359,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Chart.js", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design", "Mt. Washington Observatory data"],
+        techs: "Vue, Vite, Chart.js, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "mt-washington-temps1a",
@@ -391,7 +391,7 @@ const contents = [
             herokuComplex: false,
             herokuComplexId: null
         },
-        techs: ["Vue.js", "Git, GitHub", "ESLint, Stylelint", "Figma", "Material Design"],
+        techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
                 src: "img-gallery1a",
