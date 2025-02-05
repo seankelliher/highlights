@@ -20,6 +20,8 @@ const hideMenu = () => {
 
 <template>
     <header>
+        <div v-if="menu" class="overlay">
+        </div>
         <RouterLink to="/">
             <h1 class="bevan-regular">Sean Kelliher</h1>
         </RouterLink>
@@ -56,7 +58,7 @@ const hideMenu = () => {
         <nav v-if="menu" role="list">
             <RouterLink
                 to="/"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -65,7 +67,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/us-national-parks-alerts"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -74,7 +76,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/global-fertility-rates"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -83,7 +85,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/us-senate-directory"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -92,7 +94,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/california-temps-precip"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -101,7 +103,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-shooting-incidents"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -110,7 +112,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/map-coordinates-dms"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -119,7 +121,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-firehouses"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -128,7 +130,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/nyc-public-pools"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -137,7 +139,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/mt-washington-temps"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
@@ -146,7 +148,7 @@ const hideMenu = () => {
             </RouterLink>
             <RouterLink
                 to="/projects/img-gallery"
-                class="menu-item roboto-serif-five"
+                class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
