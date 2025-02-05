@@ -12,11 +12,11 @@ onMounted(() => {
     <footer>
         <button
             id="place"
-            class="roboto-serif-four"
+            class="noto-sans-four"
         >
             Email
         </button>
-        <button class="roboto-serif-four">
+        <button class="noto-sans-four">
             <a href="https://github.com/seankelliher" target="_blank">GitHub</a>
         </button>
     </footer>
