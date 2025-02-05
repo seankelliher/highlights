@@ -34,7 +34,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
         <div class="summary-card">
             <div class="summary-text">
                 <h2 class="bevan-regular">{{ projectContent.headline }}</h2>
-                <h3 class="roboto-serif-four">{{ projectContent.subHeadline }}</h3>
+                <h3 class="noto-sans-four">{{ projectContent.subHeadline }}</h3>
             </div>
             <figure class="summary-image">
                 <img
@@ -42,12 +42,12 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                     :alt="`${projectContent.alt}`"
                     class="rounded"
                 >
-                <figcaption class="project-caption roboto-serif-four">
+                <figcaption class="project-caption noto-sans-four">
                     {{ projectContent.caption }}
                 </figcaption>
             </figure>
             <div class="summary-text">
-                <p class="roboto-serif-four">{{ projectContent.summary }}</p>
+                <p class="noto-sans-four">{{ projectContent.summary }}</p>
             </div>
         </div>
         <!-- Supporting sidebar -->
@@ -68,8 +68,8 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 </figure>
                 <div class="summary-supporting-text">
                     <dl>
-                        <dt class="roboto-serif-five">Working Version</dt>
-                        <dd class="roboto-serif-four">A working version of this interface is on <u>{{ projectContent.platform }}</u></dd>
+                        <dt class="noto-sans-seven">Working version</dt>
+                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u></dd>
                     </dl>
                 </div>
             </div>
@@ -90,8 +90,8 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 </figure>
                 <div class="summary-supporting-text">
                     <dl>
-                        <dt class="roboto-serif-five">Working Version</dt>
-                        <dd class="roboto-serif-four">A working version of this interface is on <u>{{ projectContent.platform }}</u></dd>
+                        <dt class="noto-sans-seven">Working version</dt>
+                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u> (opens slowly)</dd>
                     </dl>
                 </div>
             </div>
@@ -112,8 +112,8 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 </figure>
                 <div class="summary-supporting-text">
                     <dl>
-                        <dt class="roboto-serif-five">Working Version</dt>
-                        <dd class="roboto-serif-four">A working version of this interface is on <u>{{ projectContent.platform }}</u></dd>
+                        <dt class="noto-sans-seven">Working version</dt>
+                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u> (opens slowly)</dd>
                     </dl>
                 </div>
             </div>
@@ -132,8 +132,8 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 </figure>
                 <div class="summary-supporting-text">
                     <dl>
-                        <dt class="roboto-serif-five">Source Code</dt>
-                        <dd class="roboto-serif-four">The source code for this interface is on <u>GitHub</u></dd>
+                        <dt class="noto-sans-seven">Source code</dt>
+                        <dd class="noto-sans-four">on <u>GitHub</u></dd>
                     </dl>
                 </div>
             </div>
@@ -148,16 +148,16 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 </figure>
                 <div class="summary-supporting-text">
                     <dl>
-                        <dt class="roboto-serif-five">Technologies</dt>
-                        <dd class="roboto-serif-four">This interface was built with:</dd>
+                        <dt class="noto-sans-seven">Technologies</dt>
+                        <dd class="noto-sans-four">{{ projectContent.techs }}</dd>
                     </dl>
-                    <ul>
+                    <!--<ul>
                         <li
                             v-for="(tech, index) in projectContent.techs"
                             :key="index"
-                            class="roboto-serif-four"
+                            class="noto-sans-four"
                         >{{ tech }}</li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
     <main>
         <div class="heading">
             <h2 class="bevan-regular">Wireframes</h2>
-            <h3 class="roboto-serif-four">Created with Figma and Material Theme Builder</h3>
+            <h3 class="noto-sans-four">Created with Figma and Material Theme Builder</h3>
         </div>
         <div class="wireframes">
             <figure
@@ -174,7 +174,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 :key="wireframe.src"
                 class="wireframe">
                 <img class="rounded" :src="`/images/wireframes/${wireframe.src}.png`" alt="{{ wireframe.alt }}">
-                <figcaption class="wire-caption">{{ wireframe.caption }}</figcaption>
+                <figcaption class="wire-caption noto-sans-four">{{ wireframe.caption }}</figcaption>
             </figure>
         </div>
     </main>
