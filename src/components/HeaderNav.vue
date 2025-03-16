@@ -147,6 +147,15 @@ const hideMenu = () => {
                 Mt. Washington Temps
             </RouterLink>
             <RouterLink
+                to="/projects/obama-scotus"
+                class="menu-item noto-sans-five"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="listitem"
+            >
+                Nominees
+            </RouterLink>
+            <RouterLink
                 to="/projects/img-gallery"
                 class="menu-item noto-sans-five"
                 @click="hideMenu()"
