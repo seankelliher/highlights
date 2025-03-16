@@ -375,6 +375,58 @@ const contents = [
         ]
     },
     {
+        id: "obama-scotus",
+        headline: "Nominees",
+        subHeadline: "Barack Obama's influence on Supreme Court nominees",
+        src: "obama-scotus",
+        alt: "Barack Obama walks arm and arm with Elena Kagan in the Oval Office",
+        thumbHead: "Nominees",
+        thumbSub: "Barack Obama's influence on the Supreme Court",
+        caption: "Barack Obama walks newly confirmed Justice Elena Kagan into the Oval Office before a public ceremony at the White House, August 6, 2010. Photo: Pete Souza",
+        summary: "This interface lets users explore a chronological timeline of Senator and President Barack Obama's influence over Supreme Court nominees. The interface features full-screen background images and smaller callouts with text and portraits. As the user scrolls, a callout moves into and eventually out of view. The background image and its caption update to match. Each scene has a small, medium, and large version of its background image so it remains readable across viewports. The interface was built with Vue.js.",
+        platform: "Netlify",
+        buttons: {
+            netlify: true,
+            herokuSimple: false,
+            herokuComplex: false,
+            herokuComplexId: null
+        },
+        techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
+        wireframes: [
+            {   
+                src: "obama-scotus1a",
+                alt: "wireframe drawing of page, without styling",
+                caption: "Wireframe 1A - Initial wireframe with text and placeholder for full-view image"
+            },
+            {   
+                src: "obama-scotus1b",
+                alt: "wireframe drawing of page, without styling",
+                caption: "Wireframe 1B - User scrolls, callouts move in and eventually out of view one by one, full-view image and caption update to match"
+            },
+            {   
+                src: "obama-scotus1c",
+                alt: "wireframe drawing of page, with styling",
+                caption: "Wireframe 1C - Wireframe with styling and images"
+            },
+            {   
+                src: "obama-scotus2",
+                alt: "wireframe drawing of page, with styling",
+                caption: "Wireframe 2 - Example with Sonia Sotomayor"
+            },
+            {   
+                src: "obama-scotus3",
+                alt: "wireframe drawing of page, with styling",
+                caption: "Wireframe 3 - Example with Merrick Garland"
+            },
+            {   
+                src: "obama-scotus4",
+                alt: "wireframe drawing of page, with styling",
+                caption: "Wireframe 4 - Example with Neal Gorsuch"
+            }
+
+        ]
+    },
+    {
         id: "img-gallery",
         headline: "Image Gallery",
         subHeadline: "Utility image carousel with arrows",
