@@ -39,6 +39,7 @@ img {
 /* Header and its elements */
 header {
     width: 95%;
+    height: 3.5em;
     margin: 0;
     padding: 0 2.5%;
     background: #121212;
@@ -80,7 +81,7 @@ nav {
     border: 2px solid #121212;
     position: absolute;
     right: 2.5%;
-    top: 57px;
+    top: 3.5em;
     z-index: 2;
 }
 
