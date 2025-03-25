@@ -191,16 +191,6 @@ const contents = [
                 src: "nyc-shooting-incidents1b",
                 alt: "wireframe drawing of page, with styling",
                 caption: "Wireframe 1B - Wireframe with styling and images"
-            },
-            {   
-                src: "nyc-shooting-incidents2a",
-                alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 2A - Initial wireframe depicting data for shooting victims"
-            },
-            {   
-                src: "nyc-shooting-incidents2b",
-                alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2B - Victims wireframe with styling, images, and pop up depicted on map"
             }
         ]
     },
