@@ -21,32 +21,32 @@ const contents = [
             {   
                 src: "us-national-parks-alerts1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text, search bar, paginated list of parks, and placeholders for the decorative image and log"
+                caption: "Wireframe 1A - Low fidelity with placeholders for logo and image"
             },
             {
                 src: "us-national-parks-alerts1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and image"
+                caption: "Wireframe 1B - High fidelity with logo and image"
             },
             {
                 src: "us-national-parks-alerts2a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 2A - Initial wireframe depicting a search for Acadia National Park"
+                caption: "Wireframe 2A - Low fidelity with search for Acadia National Park"
             },
             {
                 src: "us-national-parks-alerts2b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2B - Search wireframe with styling and image"
+                caption: "Wireframe 2B - High fidelity with search for Acadia National Park"
             },
             {
                 src: "us-national-parks-alerts3a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 3A - Initial wireframe depicting returned alert for Acadia National Park"
+                caption: "Wireframe 3A - Low fidelity with results for Acadia National Park"
             },
             {
                 src: "us-national-parks-alerts3b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 3B - Result wireframe with styling and image"
+                caption: "Wireframe 3B - High fidelity with results for Acadia National Park"
             }
         ]
     },
@@ -72,17 +72,17 @@ const contents = [
             {   
                 src: "global-fertility-rates1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text, map controls, paginated list of nations, list of regional averages, search bar, and placeholder for the map"
+                caption: "Wireframe 1A - Low fidelity with placeholder for map"
             },
             {   
                 src: "global-fertility-rates1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with map"
             },
             {   
                 src: "global-fertility-rates1c",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1C - Some rates selected (note shading on map) and result of user entering Spain in search bar"
+                caption: "Wireframe 1C - High fidelity with several fertility ranges highlighed on map and results for Spain in search bar"
             }
         ]
     },
@@ -108,40 +108,40 @@ const contents = [
             {   
                 src: "us-senate-directory1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholders for seal and images"
+                caption: "Wireframe 1A - Low fidelity with placeholders for seal and images"
             },
             {   
                 src: "us-senate-directory1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with seal and images"
             },
             {   
                 src: "us-senate-directory2a",
                 alt: "wireframe drawing of pop-up menu, without styling",
-                caption: "Wireframe 2A - Wireframe of pop-up menu for filtering"
+                caption: "Wireframe 2A - Low fidelity with menu for filtering"
             },
             {   
                 src: "us-senate-directory2b",
                 alt: "wireframe drawing of pop-up menu, with styling",
-                caption: "Wireframe 2B - Wireframe of pop-up menu with styling"
+                caption: "Wireframe 2B - High fidelity with menu for filtering"
             },
             {   
                 src: "us-senate-directory3a",
                 alt: "wireframe drawing of independent senators search result, with styling",
-                caption: "Wireframe 3A - Independent Senators selected"
+                caption: "Wireframe 3A - High fidelity with results for Independent Senators"
             }
         ]
     },
     {
         id: "california-temps-precip",
         headline: "California Temperatures and Precipitation",
-        subHeadline: "Interactive charts, 50 years of weather data in the Golden State",
+        subHeadline: "Interactive scatter plots, 50 years of weather data in the Golden State",
         src: "california-temps-precip",
         alt: "a female surfer wades into the waves",
         thumbHead: "California Weather",
         thumbSub: "Fifty years of NOAA data across the state",
         caption: "Surfer in Malibu, California. Photo: Terrell Woods",
-        summary: "This interface lets users explore California's changing climate. It looks at NOAA data over a 50-year period. Specifically, it dynamically creates interactive charts that display (1) the number of days each year with temperature over 90 degrees F, and (2) the annual precipitation in inches. The interface was built with Vue.js, Chart.js, and Mapbox. Data is stored locally, which proved more reliable and efficient than continually fetching historical data from NOAA using its API. Research was challenging. NOAA has numerous weather stations. But very few had continuous records for a 50-year period.",
+        summary: "This interface lets users explore California's changing climate. It looks at NOAA data over a 50-year period. Specifically, it dynamically creates interactive scatter plots that display (1) the number of days each year with temperature over 90 degrees F, and (2) the annual precipitation in inches. The interface was built with Vue.js, Chart.js, and Mapbox. Data is stored locally, which proved more reliable and efficient than continually fetching historical data from NOAA using its API. Research was challenging. NOAA has numerous weather stations. But very few had continuous records for a 50-year period.",
         platform: "Netlify",
         buttons: {
             netlify: true,
@@ -154,12 +154,12 @@ const contents = [
             {   
                 src: "california-temps-precip1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholders for the decorative image, map of California with pins for weather stations, and interactive charts"
+                caption: "Wireframe 1A - Low fidelity with placeholders for image, map of California, and scatter plots"
             },
             {   
                 src: "california-temps-precip1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with image, map of California, and scatter plots"
             }
         ]
     },
@@ -185,12 +185,12 @@ const contents = [
             {   
                 src: "nyc-shooting-incidents1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholders for logos and map"
+                caption: "Wireframe 1A - Low fidelity with placeholders for logos and map"
             },
             {   
                 src: "nyc-shooting-incidents1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with logos and map"
             }
         ]
     },
@@ -272,17 +272,17 @@ const contents = [
             {   
                 src: "nyc-firehouses1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholders for logos and chart"
+                caption: "Wireframe 1A - Low fidelity with placeholders for logos and map"
             },
             {   
                 src: "nyc-firehouses1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with logos and map"
             },
             {   
                 src: "nyc-firehouses1c",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1C - Pop up with information on a specific firehouse"
+                caption: "Wireframe 1C - High fidelity with pop-up displayed"
             }
         ]
     },
@@ -308,40 +308,40 @@ const contents = [
             {   
                 src: "nyc-public-pools1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholder for logo"
+                caption: "Wireframe 1A - Low fidelity with placeholder for logo"
             },
             {   
                 src: "nyc-public-pools1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and image"
+                caption: "Wireframe 1B - High fidelity with logo"
             },
             {   
                 src: "nyc-public-pools2a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 2A - Initial wireframe depicting indoor swimming pools in Queens"
+                caption: "Wireframe 2A - Low fidelity with results for indoor, swimming, Queens"
             },
             {   
                 src: "nyc-public-pools2b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2B - Queens wireframe with styling and image"
+                caption: "Wireframe 2B - High fidelity with results for indoor, swimming, Queens"
             },
             {   
                 src: "nyc-public-pools3a",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 3A - Queens wireframe with pool details"
+                caption: "Wireframe 3A - High fidelity with details for Roy Wilkins Pool"
             }
         ]
     },
     {
         id: "mt-washington-temps",
         headline: "Mt. Washington Temperatures",
-        subHeadline: "Interactive chart of average monthly temperatures on the summit, 2005 - 2023",
+        subHeadline: "Interactive line graph, average monthly summit temperatures, 2005 - 2023",
         src: "mt-washington-temps",
         alt: "climber holds the Marine Corps flag on a frigid summit",
         thumbHead: "Mt. Washington",
         thumbSub: "Average monthly summit temperatures",
         caption: "Marine Jonathan Szylobryt on the summit of Mt. Washington, January 2008. Photo: Department of Defense",
-        summary: "This interface lets users explore data from the Mt. Washington Observatory. Specifically, it dynamically creates an interactive chart that displays average monthly temperatures over several decades. The Observatory is located on the summit of Mt. Washington in North Conway, New Hampshire and is the highest point in the Northeastern United States. The interface was built with Vue.js and Chart.js. Data was downloaded from the Observatory and stored locally.",
+        summary: "This interface lets users explore data from the Mt. Washington Observatory. Specifically, it dynamically creates an interactive line graph that displays average monthly temperatures over several decades. The Observatory is located on the summit of Mt. Washington in North Conway, New Hampshire and is the highest point in the Northeastern United States. The interface was built with Vue.js and Chart.js. Data was downloaded from the Observatory and stored locally.",
         platform: "Netlify",
         buttons: {
             netlify: true,
@@ -354,12 +354,12 @@ const contents = [
             {   
                 src: "mt-washington-temps1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholders for the decorative image and interactive chart"
+                caption: "Wireframe 1A - Low fidelity with placeholder for image and line graph"
             },
             {   
                 src: "mt-washington-temps1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with image and line graph"
             }
 
         ]
@@ -386,32 +386,32 @@ const contents = [
             {   
                 src: "obama-scotus1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with text and placeholder for full-view image"
+                caption: "Wireframe 1A - Low fidelity with placeholder for image"
             },
             {   
                 src: "obama-scotus1b",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1B - User scrolls, callouts move in and eventually out of view one by one, full-view image and caption update to match"
+                caption: "Wireframe 1B - Low fidelity as user scrolls and callout comes into view"
             },
             {   
                 src: "obama-scotus1c",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1C - Wireframe with styling and images"
+                caption: "Wireframe 1C - High fidelity with images"
             },
             {   
                 src: "obama-scotus2",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 2 - Example with Sonia Sotomayor"
+                caption: "Wireframe 2 - High fidelity with Sonia Sotomayor"
             },
             {   
                 src: "obama-scotus3",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 3 - Example with Merrick Garland"
+                caption: "Wireframe 3 - High fidelity with Merrick Garland"
             },
             {   
                 src: "obama-scotus4",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 4 - Example with Neal Gorsuch"
+                caption: "Wireframe 4 - High fidelity with Neal Gorsuch"
             }
 
         ]
@@ -438,12 +438,12 @@ const contents = [
             {   
                 src: "img-gallery1a",
                 alt: "wireframe drawing of page, without styling",
-                caption: "Wireframe 1A - Initial wireframe with caption, arrows, and placeholders for the images"
+                caption: "Wireframe 1A - Low fidelity with placeholders for images"
             },
             {   
                 src: "img-gallery1b",
                 alt: "wireframe drawing of page, with styling",
-                caption: "Wireframe 1B - Wireframe with styling and images"
+                caption: "Wireframe 1B - High fidelity with images"
             }
         ]
     }
