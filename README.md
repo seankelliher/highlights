@@ -5,15 +5,18 @@ Highlights or portfolio of projects, made with Vue.js.
 
 ## Project Status
 
-TESTING: Testing for bugs, optimization, and accessibility.
+Project meets general accessibility (WACG) and cross-browser requirements. More testing with a dedicated services (e.g., Sauce Labs) would be helpful if deploying to production.
 
 ## Project Screen Shots
 
 * Homepage
 ![screen shot of project](/screenshots/highlights-screenshot1.png?s=600)
 
-* Sample project page
+* Homepage with menu deployed
 ![screen shot of project](/screenshots/highlights-screenshot2.png?s=600)
+
+* Sample project page, top part
+![screen shot of project](/screenshots/highlights-screenshot3.png?s=600)
 
 ## Installation and Setup Instructions
 
