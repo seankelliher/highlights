@@ -66,13 +66,13 @@ const hideMenu = () => {
                 Home
             </RouterLink>
             <RouterLink
-                to="/projects/us-national-parks-alerts"
+                to="/projects/california-temps-precip"
                 class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                US National Parks
+                Calif. Temps Precip
             </RouterLink>
             <RouterLink
                 to="/projects/global-fertility-rates"
@@ -84,31 +84,13 @@ const hideMenu = () => {
                 Global Fertility
             </RouterLink>
             <RouterLink
-                to="/projects/us-senate-directory"
+                to="/projects/img-gallery"
                 class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                US Senate
-            </RouterLink>
-            <RouterLink
-                to="/projects/california-temps-precip"
-                class="menu-item noto-sans-five"
-                @click="hideMenu()"
-                @keyup.enter="hideMenu()"
-                role="listitem"
-            >
-                Calif. Temps Precip
-            </RouterLink>
-            <RouterLink
-                to="/projects/nyc-shooting-incidents"
-                class="menu-item noto-sans-five"
-                @click="hideMenu()"
-                @keyup.enter="hideMenu()"
-                role="listitem"
-            >
-                NYC Shootings
+                Image Gallery
             </RouterLink>
             <RouterLink
                 to="/projects/map-coordinates-dms"
@@ -118,24 +100,6 @@ const hideMenu = () => {
                 role="listitem"
             >
                 Map Coordinates
-            </RouterLink>
-            <RouterLink
-                to="/projects/nyc-firehouses"
-                class="menu-item noto-sans-five"
-                @click="hideMenu()"
-                @keyup.enter="hideMenu()"
-                role="listitem"
-            >
-                NYC Firehouses
-            </RouterLink>
-            <RouterLink
-                to="/projects/nyc-public-pools"
-                class="menu-item noto-sans-five"
-                @click="hideMenu()"
-                @keyup.enter="hideMenu()"
-                role="listitem"
-            >
-                NYC Public Pools
             </RouterLink>
             <RouterLink
                 to="/projects/mt-washington-temps"
@@ -156,13 +120,49 @@ const hideMenu = () => {
                 Nominees
             </RouterLink>
             <RouterLink
-                to="/projects/img-gallery"
+                to="/projects/nyc-firehouses"
                 class="menu-item noto-sans-five"
                 @click="hideMenu()"
                 @keyup.enter="hideMenu()"
                 role="listitem"
             >
-                Image Gallery
+                NYC Firehouses
+            </RouterLink>
+            <RouterLink
+                to="/projects/nyc-public-pools"
+                class="menu-item noto-sans-five"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="listitem"
+            >
+                NYC Public Pools
+            </RouterLink>
+            <RouterLink
+                to="/projects/nyc-shooting-incidents"
+                class="menu-item noto-sans-five"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="listitem"
+            >
+                NYC Shootings
+            </RouterLink>
+            <RouterLink
+                to="/projects/us-national-parks-alerts"
+                class="menu-item noto-sans-five"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="listitem"
+            >
+                US National Parks
+            </RouterLink>
+            <RouterLink
+                to="/projects/us-senate-directory"
+                class="menu-item noto-sans-five"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="listitem"
+            >
+                US Senate
             </RouterLink>
         </nav>
     </header>
