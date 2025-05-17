@@ -42,7 +42,7 @@ header {
     height: 3.5em;
     margin: 0;
     padding: 0 2.5%;
-    background: #121212;
+    background: #f4f4f1; /* warm brown */
     position: relative;
     flex: initial;
     display: flex;
@@ -54,8 +54,9 @@ header {
 header::before {
     content: "";
     position: absolute;
-    inset: -2px calc((100vw - 100%) / -2);
-    background: #121212;
+    inset: -1px calc((100vw - 100%) / -2);
+    background: #f4f4f1; /* warm brown */
+    border-bottom: 1px solid #e6e6e3;
     z-index: -1;
 }
 
@@ -77,8 +78,8 @@ nav {
     overflow-y: scroll;
     margin: 0;
     padding: 0;
-    background: #f0f4f8; /* N-96 */
-    border: 2px solid #121212;
+    background: #fff;
+    border: 2px solid #e6e6e3;
     position: absolute;
     right: 2.5%;
     top: 3.5em;
@@ -90,7 +91,7 @@ nav {
     width: 100%;
     height: 100vh;
     background: #fff;
-    opacity: 0.7;
+    opacity: 0.95;
     position: absolute;
     top: 59px;
     left: 0;
@@ -102,7 +103,6 @@ main {
     width: 95%;
     margin: 0 2.5%;
     padding: 0;
-    border-top: 2px solid #eaeef2;  /* N-94 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -316,7 +316,7 @@ figure.summary-image {
     width: 100%;
     margin: 1em 0;
     padding: 0;
-    background: #eaeef2; /* N-94 */
+    background: #f4f4f1; /* warm brown */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -423,7 +423,7 @@ footer {
     width: 95%;
     margin: 2em 0 0; /* Longhand 2em 0 0 0 */
     padding: 1em 2.5%;
-    background: #121212;
+    background: #f4f4f1;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -435,8 +435,9 @@ footer {
 footer::before {
     content: "";
     position: absolute;
-    inset: -2px calc((100vw - 100%) / -2);
-    background: #121212;
+    background: #f4f4f1;
+    border-top: 1px solid #e6e6e3;
+    inset: -1px calc((100vw - 100%) / -2);
     z-index: -1;
 }
 
@@ -444,15 +445,15 @@ button {
     width: 100px;
     margin: 0 20px;
     background: transparent;
-    border: 2px solid #fff;
+    border: 1px solid #545454;
     border-radius: 12px;
-    color: #fff;
+    color: #222;
     font-size: var(--fs0);
     line-height: 1.6;
 }
 
 button a {
-    color: #fff;
+    color: #222;
 }
 
 button:hover {
@@ -508,7 +509,7 @@ h1 {
     font-size: var(--fs2);
     line-height: 1.5;
     display: inline-flex; /* Keeps hyperlink to only text */
-    color: #fff;
+    color: #d41b16; /* red */
 }
 
 h2 {
@@ -547,7 +548,7 @@ figcaption {
 
 /* For figcaption on projects */
 .project-caption {
-    padding: 0.5em 0;
+    padding: 0.5em;
     text-align: left;
 }
 
@@ -566,14 +567,14 @@ dl {
 dt {
     font-size: var(--fs0);
     line-height: 1.8;
-    color: #121212;
+    color: #222;
 }
 
 dd {
     font-size: var(--fs0);
     line-height: 1.6;
     margin-left: 0;
-    color: #121212;
+    color: #222;
 }
 
 ul {
@@ -584,14 +585,13 @@ ul {
 li {
     font-size: var(--fs0);
     line-height: 1.8;
-    color: #121212;
+    color: red;
 }
 
 /* Font items within nav (aka menu) */
 .menu-item {
     font-size: var(--fs0);
     line-height: 2.5;
-    color: #171c1f; /* N-10 */
     padding-left: 1.5em;
     padding-right: 1.5em;
     display: inline-flex;
@@ -599,17 +599,7 @@ li {
 }
 
 .menu-item:hover {
-    background: #dfe3e7; /* N-90 */
-}
-
-.menu-item a {
-    color: #171c1f; /* N-10 */
-}
-
-.greeting-msg {
-    font-size: var(--fs2);
-    line-height: 1.44; /* keeps line height same as adjoining p tag */
-    color: #fff;
+    background: #e6e6e3;
 }
 
 /* Router links */
@@ -618,9 +608,9 @@ li {
     color: #121212;
 }
 
-nav .router-link-active, nav .router-link-active:hover {
+nav .router-link-active {
     width: 100%;
-    background: #121212;
-    color: #fff;
+    background: #ccccca;
+    color: #121212;
     text-decoration: none;
 }

@@ -9,13 +9,13 @@ onMounted(() => {
     const time = event.toLocaleTimeString("it-IT");
     const hours = time.substring(0,2);
     if (hours < 12 ) {
-        greeting.value = "Good morning,";
+        greeting.value = "Good morning";
     } else if (hours >= 12 && hours < 18) {
-        greeting.value = "Good afternoon,";
+        greeting.value = "Good afternoon";
     } else if (hours >= 18) {
-        greeting.value = "Good evening,";
+        greeting.value = "Good evening";
     } else {
-        greeting.value = "Hello there,";
+        greeting.value = "Hello there";
     }
 });
 </script>
@@ -23,8 +23,8 @@ onMounted(() => {
 <template>
     <main>
         <div class="heading">
-            <h2 class="bevan-regular">User Interfaces</h2>
-            <h3 class="noto-sans-four">Maps, data visualization, guided work flows, directories</h3>
+            <h2 class="bevan-regular">{{ greeting }}</h2>
+            <h3 class="noto-sans-four">View maps, data visualization, guided work flows, directories</h3>
         </div>
         <div class="projects">
             <div class="project-card" v-for="content in contents" :key="content.id">

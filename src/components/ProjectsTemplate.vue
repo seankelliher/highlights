@@ -69,7 +69,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u></dd>
+                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u></dd>
                     </dl>
                 </div>
             </div>
@@ -91,7 +91,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u> (opens slowly)</dd>
+                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u> (opens slowly)</dd>
                     </dl>
                 </div>
             </div>
@@ -113,7 +113,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four">on <u>{{ projectContent.platform }}</u> (opens slowly)</dd>
+                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u> (opens slowly)</dd>
                     </dl>
                 </div>
             </div>
@@ -133,7 +133,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Source code</dt>
-                        <dd class="noto-sans-four">on <u>GitHub</u></dd>
+                        <dd class="noto-sans-four"><u>View on GitHub</u></dd>
                     </dl>
                 </div>
             </div>
@@ -166,7 +166,7 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
     <main>
         <div class="heading">
             <h2 class="bevan-regular">Wireframes</h2>
-            <h3 class="noto-sans-four">Created with Figma and Material Theme Builder</h3>
+            <h3 class="noto-sans-four">The interface was built based on these initial drawings</h3>
         </div>
         <div class="wireframes">
             <figure
