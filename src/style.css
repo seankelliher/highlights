@@ -42,7 +42,6 @@ header {
     height: 3.5em;
     margin: 0;
     padding: 0 2.5%;
-    background: #f4f4f1; /* warm brown */
     position: relative;
     flex: initial;
     display: flex;
@@ -54,9 +53,9 @@ header {
 header::before {
     content: "";
     position: absolute;
-    inset: -1px calc((100vw - 100%) / -2);
+    inset: 0 calc((100vw - 100%) / -2);
     background: #f4f4f1; /* warm brown */
-    border-bottom: 1px solid #e6e6e3;
+    border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
     z-index: -1;
 }
 
@@ -423,7 +422,6 @@ footer {
     width: 95%;
     margin: 2em 0 0; /* Longhand 2em 0 0 0 */
     padding: 1em 2.5%;
-    background: #f4f4f1;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -437,7 +435,7 @@ footer::before {
     position: absolute;
     background: #f4f4f1;
     border-top: 1px solid #e6e6e3;
-    inset: -1px calc((100vw - 100%) / -2);
+    inset: 0 calc((100vw - 100%) / -2);
     z-index: -1;
 }
 
