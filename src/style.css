@@ -607,12 +607,12 @@ li {
 }
 
 /* Router links */
-.router-link-exact-active {
+nav .router-link-exact-active {
     text-decoration: none;
     color: #121212;
 }
 
-.router-link-active {
+nav .router-link-active {
     width: 100%;
     background: #ccccca;
     color: #121212;
