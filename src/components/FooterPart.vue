@@ -1,20 +1,17 @@
 <script setup>
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
+
+const address = ref("");
 
 onMounted(() => {
-    const address = ("<n uers=\"znvygb:foxryyvure@vpybhq.pbz\" ery=\"absbyybj\">Rznvy</n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-    const place = document.getElementById("place");
-    place.innerHTML = address;
+    address.value = ("foxryyvure@vpybhq.pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
 });
 </script>
 
 <template>
     <footer>
-        <button
-            id="place"
-            class="noto-sans-four"
-        >
-            Email
+        <button class="noto-sans-four">
+            <a :href="`mailto:${address}`">Email</a>
         </button>
         <button class="noto-sans-four">
             <a href="https://github.com/seankelliher" target="_blank">GitHub</a>
@@ -23,4 +20,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
+    a {
+        display: block;
+    }
 </style>
