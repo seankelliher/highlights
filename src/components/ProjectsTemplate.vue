@@ -9,11 +9,7 @@ const route = useRoute();
 const routeId = ref(""); //CHECK THIS, const v let
 routeId.value = route.params.id;
 
-// Platform buttons
-const netlify = ref();
-const herokuSimple = ref();
-const herokuComplex = ref();
-
+// When route changes, get content from contents-data.js where content.id matches route. 
 let projectContent = computed(() => {
     return contents.find(content => content.id === routeId.value);
 });
@@ -22,10 +18,6 @@ watch(projectContent, () => {
     // console.log("route changed");
 });
 
-// Assign value to platform buttons
-netlify.value = projectContent.value.buttons.netlify;
-herokuSimple.value = projectContent.value.buttons.herokuSimple;
-herokuComplex.value = projectContent.value.buttons.herokuComplex;
 </script>
 
 <template>
@@ -52,13 +44,8 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
         </div>
         <!-- Supporting sidebar -->
         <div class="summary-supporting">
-            <!-- Netlify card -->
-            <div
-                v-if="netlify"
-                @click="links.openNetlify($route.fullPath)"
-                @keyup.enter="links.openNetlify($route.fullPath)"
-                class="summary-supporting-card"
-            >
+            <!-- Platform card (Netlify, Heroku) -->
+            <div class="summary-supporting-card">
                 <figure class="summary-supporting-image">
                     <img
                         src="/images/avatars/avatar-gears.jpg"
@@ -69,60 +56,21 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u></dd>
+                        <dd class="noto-sans-four">
+                            <a
+                                :href="`https://${projectContent.platformUrl}`"
+                                target="_blank"
+                                class="blue"
+                            >
+                                View working version on {{ projectContent.platform }}
+                            </a> <span v-if="projectContent.platformWarn">{{ projectContent.platformWarn }}</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
 
-            <!-- Heroku card for simple URLs -->
-            <div
-                v-if="herokuSimple"
-                @click="links.openHerokuSimple($route.fullPath)"
-                @keyup.enter="links.openHerokuSimple($route.fullPath)"
-                class="summary-supporting-card"
-            >
-                <figure class="summary-supporting-image">
-                    <img
-                        src="/images/avatars/avatar-gears.jpg"
-                        alt="cute colorful gear"
-                    >
-                    <figcaption hidden>avatar, machinery working</figcaption>
-                </figure>
-                <div class="summary-supporting-text">
-                    <dl>
-                        <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u> (opens slowly)</dd>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Heroku card for complex URLs -->
-            <div
-                v-if="herokuComplex"
-                @click="links.openHerokuComplex($route.fullPath, `${projectContent.buttons.herokuComplexId}`)"
-                @keyup.enter="links.openHerokuComplex($route.fullPath, `${projectContent.buttons.herokuComplexId}`)"
-                class="summary-supporting-card"
-            >
-                <figure class="summary-supporting-image">
-                    <img
-                        src="/images/avatars/avatar-gears.jpg"
-                        alt="cute colorful gear"
-                    >
-                    <figcaption hidden>avatar, machinery working</figcaption>
-                </figure>
-                <div class="summary-supporting-text">
-                    <dl>
-                        <dt class="noto-sans-seven">Working version</dt>
-                        <dd class="noto-sans-four"><u>View on {{ projectContent.platform }}</u> (opens slowly)</dd>
-                    </dl>
-                </div>
-            </div>
             <!-- GitHub card -->
-            <div
-                @click="links.openGitHub($route.fullPath)"
-                @keyup.enter="links.openGitHub($route.fullPath)"
-                class="summary-supporting-card"
-            >
+            <div class="summary-supporting-card">
                 <figure class="summary-supporting-image">
                     <img
                         src="/images/avatars/avatar-discs.jpg"
@@ -133,7 +81,15 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                 <div class="summary-supporting-text">
                     <dl>
                         <dt class="noto-sans-seven">Source code</dt>
-                        <dd class="noto-sans-four"><u>View on GitHub</u></dd>
+                        <dd class="noto-sans-four">
+                            <a
+                                :href="`https://github.com/seankelliher/${projectContent.id}`"
+                                target="_blank"
+                                class="blue"
+                            >
+                                View source code on GitHub
+                            </a>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -151,13 +107,6 @@ herokuComplex.value = projectContent.value.buttons.herokuComplex;
                         <dt class="noto-sans-seven">Technologies</dt>
                         <dd class="noto-sans-four">{{ projectContent.techs }}</dd>
                     </dl>
-                    <!--<ul>
-                        <li
-                            v-for="(tech, index) in projectContent.techs"
-                            :key="index"
-                            class="noto-sans-four"
-                        >{{ tech }}</li>
-                    </ul>-->
                 </div>
             </div>
         </div>
