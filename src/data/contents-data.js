@@ -10,12 +10,8 @@ const contents = [
         caption: "Surfer in Malibu, California. Photo: Terrell Woods",
         summary: "This interface lets users explore California's changing climate. It looks at NOAA data over a 50-year period. Specifically, it dynamically creates interactive scatter plots that display (1) the number of days each year with temperature over 90 degrees F, and (2) the annual precipitation in inches. The interface was built with Vue.js, Chart.js, and Mapbox. Data is stored locally, which proved more reliable and efficient than continually fetching historical data from NOAA using its API. Research was challenging. NOAA has numerous weather stations. But very few had continuous records for a 50-year period.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-california-temps-precip.netlify.app",
+        platformWarn: null,
         techs: "Vue.js, Vite, Mapbox, Chart.js, NOAA API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -41,12 +37,8 @@ const contents = [
         caption: "Barack Obama walks newly confirmed Justice Elena Kagan into the Oval Office before a public ceremony at the White House, August 6, 2010. Photo: Pete Souza",
         summary: "This interface lets users explore a chronological timeline of Senator and President Barack Obama's influence over Supreme Court nominees. The interface features full-screen background images and smaller callouts with text and portraits. As the user scrolls, a callout moves into and eventually out of view. The background image and its caption update to match. Each scene has a small, medium, and large version of its background image so it remains readable across viewports. The interface was built with Vue.js.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-obama-scotus.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -93,12 +85,8 @@ const contents = [
         caption: "A game of beach soccer in Ashkutu, Iran. Photo: Mostafameraji",
         summary: "This interface lets users explore fertility rates around the world. Using data from the Central Intelligence Agency (CIA), it dynamically creates an interactive world map where users can toggle on/off specific rates and highlight/unhighlight the matching nations. Users can also toggle a pop-up info box for each nation which reveals its exact fertility rate. The interface also contains a list of fertility rates for all nations, a list of regional averages, and a search bar to look up a specific nation's rate. It was built with Vue.js and Mapbox, with data stored locally.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-global-fertility-rates.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Mapbox, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -129,12 +117,8 @@ const contents = [
         caption: "Marine Jonathan Szylobryt on the summit of Mt. Washington, January 2008. Photo: Department of Defense",
         summary: "This interface lets users explore data from the Mt. Washington Observatory. Specifically, it dynamically creates an interactive line graph that displays average monthly temperatures over several decades. The Observatory is located on the summit of Mt. Washington in North Conway, New Hampshire and is the highest point in the Northeastern United States. The interface was built with Vue.js and Chart.js. Data was downloaded from the Observatory and stored locally.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-mt-washington-temps.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Chart.js, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -161,12 +145,8 @@ const contents = [
         caption: "Park Ranger Lydia Faller in Yellowstone National Park. Photo: Jacob W. Frank",
         summary: "This interface offers users a means to easily access alerts from the National Park Service (NPS) on conditions at any of its 471 areas. Alerts are drawn through an API managed by the NPS. The interface was built with Vue.js and Express.js. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of the National Park Service's digital products.",
         platform: "Heroku",
-        buttons: {
-            netlify: false,
-            herokuSimple: false,
-            herokuComplex: true,
-            herokuComplexId: "fa601db96052"
-        },
+        platformUrl: "www.sean-kelliher.com/projects/us-national-parks-alerts",
+        platformWarn: "(opens slowly)",
         techs: "Vue, Vite, Express, NPS API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -212,12 +192,8 @@ const contents = [
         caption: "Hikers on their way to the summit of Valijiya in Qom province, Iran. Photo: Mostafameraji",
         summary: "This interface lets users convert map coordinates from the traditional Degrees, Minutes, and Seconds (DMS) format to the Digital Degrees (DD) format used in computer-based mapping like Google Maps and Mapbox. It offers users a step by step guided interface to convert coordinates. It also dynamically generates a map of the location. The interface was built with Vue.js and Mapbox.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-map-coordinates-dms.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Mapbox, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -268,12 +244,8 @@ const contents = [
         caption: "The United States Capitol in Washington, DC. Photo: Paul Sableman",
         summary: "This interface lets users explore current United States Senators. Using data from the US Senate, users can filter senators by state, gender, party, re-election date, or any combination of these. There is also a search bar so users can search for a senator by first, last, or full name. Since some senators have less formal and more formal names, the search was built to try to accommodate these variables. For example, people can search for Bob or Robert Casey, Dick or Richard Durbin. The interface was built with Vue.js, with data stored locally.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-us-senate-directory.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -314,12 +286,8 @@ const contents = [
         caption: "A member of New York's Finest keeps watch on a summer day. Photo: See-ming Lee",
         summary: "This interface lets users explore a dashboard and interactive map of year-to-date shooting incidents in New York City. The interface utilizes Open Data NYC's API to gather a list of individual shootings compiled by the NYPD. From there, it dynamically creates an interactive map with pins (and info pop-ups) for each shooting. It then sorts and compiles the data into statistics and populates a chart with them. The interface was built with Vue.js, Express.js, and Mapbox. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of NYC government's digital products.",
         platform: "Heroku",
-        buttons: {
-            netlify: false,
-            herokuSimple: true,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "www.sean-kelliher.com/projects/nyc-shooting-incidents",
+        platformWarn: "(opens slowly)",
         techs: "Vue, Vite, Express, Mapbox, Open Data NYC API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -345,12 +313,8 @@ const contents = [
         caption: "Swimming pool in Astoria Park, Queens. Photo: Global Jet",
         summary: "This interface lets users explore public, city-owned swimming pools in New York City. Using data from NYC's Parks Department, it creates a list of pools that can be filtered by borough, pool type, swim type, or a combination of the three. There is also a search bar to search for a pool by name. Returned pools appear as boxes with basic information (name, address, telephone). When clicked or tapped, the boxes pop up and expand to reveal more information such a pool dimensions and depth. The interface was built with Vue.js, with data stored locally. It follows the design aesthetic of NYC government's digital products.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-nyc-public-pools.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -391,12 +355,8 @@ const contents = [
         caption: "FDNY on scene at a fire in Brooklyn. Photo: Billie Grace Ward",
         summary: "This interface lets users explore firehouses in NYC. Using data from the FDNY, it dynamically creates an interactive map with pins (and info pop-ups) of firehouses within the five boroughs. The interface was built with Vue.js and Mapbox, with data stored remotely at Mapbox. It follows the design aesthetic of FDNY digital products.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-nyc-firehouses.netlify.app",
+        platformWarn: null,
         techs: "Vue.js, Vite, Mapbox, Open Data NYC API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
@@ -427,12 +387,8 @@ const contents = [
         caption: "Snapshots at Hokitika Gorge on the west coast of New Zealand. Photo: Stewart Nimmo",
         summary: "This interface lets users explore images in a carousel. It loops through an object of data (file names, captions, alt tags, etc.) to dynamically create the carousel. From there, users can navigate images by clicking/tapping directional arrows or directly on thumbnails. The selected thumbnail is shaded to indicate its state. The interface was built with Vue.js with data stored locally.",
         platform: "Netlify",
-        buttons: {
-            netlify: true,
-            herokuSimple: false,
-            herokuComplex: false,
-            herokuComplexId: null
-        },
+        platformUrl: "sean-kelliher-img-gallery.netlify.app",
+        platformWarn: null,
         techs: "Vue, Vite, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   
