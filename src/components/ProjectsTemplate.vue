@@ -2,11 +2,10 @@
 import { ref, watch, computed } from "vue";
 import { useRoute } from "vue-router";
 import { contents } from "../data/contents-data.js";
-import { links } from "../composables/repo-links.js";
 
 // Routes
 const route = useRoute();
-const routeId = ref(""); //CHECK THIS, const v let
+const routeId = ref("");
 routeId.value = route.params.id;
 
 // When route changes, get content from contents-data.js where content.id matches route. 
