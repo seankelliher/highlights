@@ -22,10 +22,10 @@ onMounted(() => {
 
 <template>
     <main>
-        <div class="heading">
+        <hgroup>
             <h2 class="bevan-regular">{{ greeting }}</h2>
             <h3 class="noto-sans-four">View maps, data visualization, guided work flows, directories</h3>
-        </div>
+        </hgroup>
         <div class="projects">
             <div class="project-card" v-for="content in contents" :key="content.id">
                 <RouterLink :to="`/projects/${content.id}`" aria-label="project thumbnail, leads to project page">

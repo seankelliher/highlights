@@ -129,15 +129,11 @@ main {
 }
 
 /* Headings for main content, all pages */
-.heading {
+hgroup {
     width: 100%;
-    margin-top: 2em;
+    margin: 1em 0;
     padding: 0;
     flex: initial;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 /* Thumbnails on homepage */
@@ -274,10 +270,10 @@ figure.project-image {
     }
 }
 
-/* Container for "project" pagea */
-.summary {
-    width: 100%;
-    margin: 2em 0;
+/* Container for "project" pages */
+.intro {
+    width: 95%;
+    margin: 0 2.5%;
     padding: 0;
     flex: initial;
     display: flex;
@@ -287,8 +283,8 @@ figure.project-image {
 }
 
 /* Primary content, left side on larger screens */
-.summary-card {
-    margin: 0 2.5%;
+.intro-card {
+    margin: 0;
     padding: 0%;
     flex: initial;
     display: flex;
@@ -297,14 +293,14 @@ figure.project-image {
     align-items: flex-start;
 }
 
-.summary-text {
+figure.intro-image {
     width: 100%;
     margin: 0;
     padding: 0;
     flex: initial;
 }
 
-figure.summary-image {
+.intro-text {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -312,8 +308,8 @@ figure.summary-image {
 }
 
 /* Supporting sidebar content, right side on larger screens */
-.summary-supporting {
-    /* margin: 0 2.5%; */
+.intro-sidebar {
+    margin: 0;
     padding: 0;
     flex: initial;
     display: flex;
@@ -322,60 +318,58 @@ figure.summary-image {
     align-items: flex-start;
 }
 
-.summary-supporting-card {
+.intro-sidebar-card {
     width: 100%;
-    margin: 1em 0;
+    margin: 0 0 2em;
     padding: 0;
     background: #f4f4f1; /* warm brown */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
 }
 
-figure.summary-supporting-image {
-    /* width: 25%; */
-    margin: 0;
-    padding: 0;
-    flex: initial;
-}
-
-.summary-supporting-text {
+.intro-sidebar-text {
     width: 65%;
     margin: 0;
     padding: 0 5%;
     flex: initial;
 }
 
+figure.intro-sidebar-image {
+    /* width: 25%; */
+    margin: 0;
+    padding: 0;
+    flex: initial;
+}
+
 /* Media queries for primary content and supporting sidebar */
 @media (min-width: 300px) and (max-width: 799px) {
-    .summary-card {
-        width: 90%; /* add 5% for margins = 100% */
+    .intro-card {
+        width: 100%;
     }
 
-    .summary-supporting {
-        width: 90%;  /* add 5% for margins = 100% */
-        margin: 0 2.5%;
+    .intro-sidebar {
+        width: 100%;
     }
 
-    figure.summary-supporting-image {
+    figure.intro-sidebar-image {
         width: 15%;
     }
 }
 
 @media (min-width: 800px)  {
-    .summary-card {
-        width: 50%; /* add 5% for margins = 55% */
+    .intro-card {
+        width: 55%;
     }
 
-    .summary-supporting {
-        width: 35%;  /* add 5% for margins = 40% */
-        margin: 8em 2.5% 0; /* Longhand 8em 2.5% 0 2.5% */
+    .intro-sidebar {
+        width: 40%;
     }
 
-    figure.summary-supporting-image {
+    figure.intro-sidebar-image {
         width: 25%;
     }
 }
