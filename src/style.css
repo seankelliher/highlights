@@ -275,6 +275,7 @@ figure.project-image {
     width: 95%;
     margin: 0 2.5%;
     padding: 0;
+    border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -284,8 +285,6 @@ figure.project-image {
 
 /* Primary content, left side on larger screens */
 .intro-card {
-    margin: 0;
-    padding: 0%;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -349,6 +348,9 @@ figure.intro-sidebar-image {
 @media (min-width: 300px) and (max-width: 799px) {
     .intro-card {
         width: 100%;
+        margin: 0 0 2em;
+        padding: 0 0 1em;
+        border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
     }
 
     .intro-sidebar {
@@ -363,6 +365,8 @@ figure.intro-sidebar-image {
 @media (min-width: 800px)  {
     .intro-card {
         width: 55%;
+        padding: 0 2.5% 1em 0;
+        border-right: 1px solid #e6e6e3; /* #e6e6e3 */
     }
 
     .intro-sidebar {
