@@ -16,10 +16,6 @@ let projectContent = computed(() => {
 // Add title tag, meta description
 document.title = `Sean Kelliher - ${projectContent.value.headline}`;
 document.querySelector("meta[name='description']").setAttribute("content", projectContent.value.subHeadline);
-
-//watch(projectContent, () => {
-    // console.log("route changed");
-//});
 </script>
 
 <template>
