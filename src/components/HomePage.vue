@@ -18,6 +18,10 @@ onMounted(() => {
         greeting.value = "Hello there";
     }
 });
+
+// Add title tag, meta description
+document.title = " Sean Kelliher - Highlights";
+document.querySelector("meta[name='description']").setAttribute("content", "I'm Sean Kelliher. I like building interfaces, maps, and data visualizations like the ones you see here.");
 </script>
 
 <template>

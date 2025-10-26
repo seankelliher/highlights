@@ -1,4 +1,7 @@
 <script setup>
+// Add title tag, meta description
+document.title = " Sean Kelliher - 404";
+document.querySelector("meta[name='description']").setAttribute("content", "404 - Page Not Found");
 </script>
 
 <template>

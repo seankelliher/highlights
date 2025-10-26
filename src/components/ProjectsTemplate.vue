@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, computed } from "vue";
+import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import { contents } from "../data/contents-data.js";
 
@@ -13,10 +13,13 @@ let projectContent = computed(() => {
     return contents.find(content => content.id === routeId.value);
 });
 
-watch(projectContent, () => {
-    // console.log("route changed");
-});
+// Add title tag, meta description
+document.title = `Sean Kelliher - ${projectContent.value.headline}`;
+document.querySelector("meta[name='description']").setAttribute("content", projectContent.value.subHeadline);
 
+//watch(projectContent, () => {
+    // console.log("route changed");
+//});
 </script>
 
 <template>
