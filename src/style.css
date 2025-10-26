@@ -444,16 +444,17 @@ footer::before {
 button {
     width: 100px;
     margin: 0 20px;
-    background: transparent;
-    border: 1px solid #545454;
-    border-radius: 12px;
-    color: #222;
+    background: #d41b16; /* red */
+    border: none;
+    border-radius: 16px;
+    color: #fff;
     font-size: var(--fs0);
-    line-height: 1.6;
+    line-height: 1.8;
+    box-shadow: 2px 2px 4px 1px #e6e6e3;
 }
 
 button a {
-    color: #222;
+    color: #fff;
 }
 
 button:hover {
