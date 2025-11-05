@@ -22,7 +22,7 @@ img {
 }
 
 .rounded {
-    border-radius: 6px;
+    border-radius: 12px;
     box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
 }
 
@@ -149,6 +149,8 @@ hgroup {
 .project-card {
     margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
+    background: #f4f4f1; /* warm brown */
+    border-radius: 12px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -526,6 +528,14 @@ h3 {
     line-height: 1.4;
     margin-top: 0;
     color: #121212;
+}
+
+h4 {
+    font-size: var(--fs0);
+    line-height: 1.4;
+    color: #121212;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 /* P-tag */
