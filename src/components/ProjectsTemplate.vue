@@ -34,7 +34,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                     :alt="`${projectContent.alt}`"
                     class="rounded"
                 >
-                <figcaption class="project-caption noto-sans-four">
+                <figcaption class="intro-card-caption noto-sans-four">
                     {{ projectContent.caption }}
                 </figcaption>
             </figure>

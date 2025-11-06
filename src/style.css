@@ -557,15 +557,21 @@ figcaption {
     color: #545454;
 }
 
-/* For figcaption on projects */
-.project-caption {
-    padding: 0.5em;
+/* For figcaption in project cards, homepage */
+.project-card-caption {
+    padding: 1em 5%;
     text-align: left;
 }
 
-/* For figcaption on wireframes */
+/* For figcaption in intro cards, project pages */
+.intro-card-caption {
+    padding: 0.5em 0;
+    text-align: left;
+}
+
+/* For figcaption in wireframes, project pages */
 .wire-caption {
-    padding: 1em 2.5%;
+    padding: 1em 5%;
     text-align: left;
 }
 

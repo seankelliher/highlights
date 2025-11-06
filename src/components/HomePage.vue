@@ -39,7 +39,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                             :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="project-caption noto-sans-four">
+                        <figcaption class="project-card-caption noto-sans-four">
                             <h4 class="noto-sans-seven">{{ content.thumbHead }}</h4>
                             {{ content.thumbSub }}
                         </figcaption>
