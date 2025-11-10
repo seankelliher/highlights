@@ -1,10 +1,10 @@
-/* @link https://utopia.fyi/type/calculator?c=320,15,1.125,1280,16,1.125,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=360,15,1.125,1280,20,1.125,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
-    --fs-1: clamp(0.8333rem, 0.8148rem + 0.0926vw, 0.8889rem);
-    --fs0: clamp(0.9375rem, 0.9167rem + 0.1042vw, 1rem);
-    --fs1: clamp(1.0547rem, 1.0313rem + 0.1172vw, 1.125rem);
-    --fs2: clamp(1.1865rem, 1.1602rem + 0.1318vw, 1.2656rem);
-    --fs3: clamp(1.3348rem, 1.3052rem + 0.1483vw, 1.4238rem);
+  --fs-1: clamp(0.8333rem, 0.7246rem + 0.4831vw, 1.1111rem);
+  --fs0: clamp(0.9375rem, 0.8152rem + 0.5435vw, 1.25rem);
+  --fs1: clamp(1.0547rem, 0.9171rem + 0.6114vw, 1.4063rem);
+  --fs2: clamp(1.1865rem, 1.0318rem + 0.6878vw, 1.582rem);
+  --fs3: clamp(1.3348rem, 1.1607rem + 0.7738vw, 1.7798rem);
 }
 
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
@@ -35,7 +35,7 @@ a {
 /* Makes links blue */
 .blue {
     text-decoration: underline;
-    color: #276389;
+    color: #0468BF; /* blue */
 }
 
 .blue:hover {
@@ -56,7 +56,6 @@ a {
 /* Header and its elements */
 header {
     width: 95%;
-    height: 3.5em;
     margin: 0;
     padding: 0 2.5%;
     position: relative;
@@ -89,29 +88,27 @@ figure.menu-icon:hover {
 
 /* Pop-up menu */
 nav {
-    width: 15em;
+    width: 18em; /* 288px */
     max-height: 80vh;
     overflow-y: scroll;
     margin: 0;
     padding: 0;
     background: #fff;
-    border-right: 2px solid #e6e6e3;
-    border-bottom: 2px solid #e6e6e3;
-    border-left: 2px solid #e6e6e3;
-    position: absolute;
-    right: 2.5%;
-    top: 3.5em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 /* "Frosts" window when menu opens */
 .overlay {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #fff;
-    opacity: 0.95;
-    position: absolute;
-    top: 59px;
+    opacity: 1;
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 1;
 }
@@ -322,8 +319,9 @@ figure.intro-image {
 .intro-sidebar-card {
     width: 100%;
     margin: 0 0 2em;
-    padding: 0;
+    padding: 1em 0;
     background: #f4f4f1; /* warm brown */
+    border-radius: 12px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -446,7 +444,7 @@ footer::before {
 button {
     width: 100px;
     margin: 0 20px;
-    background: #d41b16; /* red */
+    background: #d92b2b; /* red */
     border: none;
     border-radius: 16px;
     color: #fff;
@@ -474,12 +472,6 @@ button:hover {
 }
 
 /* Fonts from Google */
-.bevan-regular {
-    font-family: Bevan, serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .noto-sans-four {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
@@ -498,11 +490,20 @@ button:hover {
         "wdth" 100;
 }
 
-.noto-sans-seven {
+.noto-sans-eight {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.noto-sans-eight-italic {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
     font-variation-settings:
         "wdth" 100;
 }
@@ -512,7 +513,7 @@ h1 {
     font-size: var(--fs2);
     line-height: 1.5;
     display: inline-flex; /* Keeps hyperlink to only text */
-    color: #d41b16; /* red */
+    color: #D92B2B; /* red */
 }
 
 h2 {
@@ -584,35 +585,25 @@ dl {
 dt {
     font-size: var(--fs0);
     line-height: 1.8;
-    color: #222;
+    color: #121212;
 }
 
 dd {
     font-size: var(--fs0);
     line-height: 1.6;
     margin-left: 0;
-    color: #222;
-}
-
-ul {
-    padding-left: 0;
-    list-style-position: inside;
-}
-
-li {
-    font-size: var(--fs0);
-    line-height: 1.8;
-    color: red;
+    color: #121212;
 }
 
 /* Font items within nav (aka menu) */
 .menu-item {
+    width: 80%;
+    margin: 0;
+    padding: 0 10%;
     font-size: var(--fs0);
     line-height: 2.5;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     display: inline-flex;
-    width: 12em;
+    text-align: center;
 }
 
 .menu-item:hover {
@@ -628,6 +619,5 @@ nav .router-link-exact-active {
 nav .router-link-active {
     width: 100%;
     background: #ccccca;
-    color: #121212;
     text-decoration: none;
 }
