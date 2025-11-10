@@ -27,7 +27,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 <template>
     <main>
         <hgroup>
-            <h2 class="bevan-regular">{{ greeting }}</h2>
+            <h2 class="noto-sans-eight-italic">{{ greeting }}</h2>
             <h3 class="noto-sans-four">View maps, data visualization, guided work flows, directories</h3>
         </hgroup>
         <div class="projects">
