@@ -23,7 +23,7 @@ const hideMenu = () => {
         <div v-if="menu" class="overlay">
         </div>
         <RouterLink to="/">
-            <h1 class="bevan-regular">Sean Kelliher</h1>
+            <h1 class="noto-sans-eight">Sean Kelliher</h1>
         </RouterLink>
 
         <!-- Menu "hamburger" icon -->
@@ -40,22 +40,21 @@ const hideMenu = () => {
             <figcaption hidden>icon for the website's menu</figcaption>
         </figure>
 
-        <!-- Close "x" icon -->
-        <figure
-            v-if="menu"
-            class="menu-icon"
-            @click="hideMenu()"
-            @keyup.enter="hideMenu()"
-            role="button"
-            tabindex="0"
-            aria-haspopup="menu"
-        >
-            <img src="/images/close-icon-32.svg" alt="the letter 'x'">
-            <figcaption hidden>icon to close an open dialogue</figcaption>
-        </figure>
-
         <!-- Menu - using "nav" tag because "menu" should house <li> -->
         <nav v-if="menu" role="list">
+            <!-- Close "x" icon -->
+            <figure
+                v-if="menu"
+                class="menu-icon"
+                @click="hideMenu()"
+                @keyup.enter="hideMenu()"
+                role="button"
+                tabindex="0"
+                aria-haspopup="menu"
+            >
+                <img src="/images/close-icon-32.svg" alt="the letter 'x'">
+                <figcaption hidden>icon to close an open dialogue</figcaption>
+            </figure>
             <RouterLink
                 to="/"
                 class="menu-item noto-sans-five"
