@@ -326,11 +326,11 @@ figure.intro-image {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
+    /* box-shadow: 2px 2px 4px 1px #dfe3e7;  N-90 */
 }
 
 .intro-sidebar-text {
-    width: 65%;
+    width: 90%;
     margin: 0;
     padding: 0 5%;
     flex: initial;
