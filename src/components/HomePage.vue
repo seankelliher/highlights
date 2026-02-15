@@ -40,7 +40,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                             class="rounded"
                         >
                         <figcaption class="project-card-caption noto-sans-four">
-                            <h4 class="noto-sans-seven">{{ content.thumbHead }}</h4>
+                            <span class="fig-heading noto-sans-seven">{{ content.thumbHead }}</span>
                             {{ content.thumbSub }}
                         </figcaption>
                     </figure>

@@ -23,7 +23,6 @@ img {
 
 .rounded {
     border-radius: 12px;
-    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
 }
 
 /* Baseline for links, needed for nav links */
@@ -490,6 +489,15 @@ button:hover {
         "wdth" 100;
 }
 
+.noto-sans-seven {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 .noto-sans-eight {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
@@ -556,6 +564,15 @@ figcaption {
     font-size: var(--fs-1);
     line-height: 1.5;
     color: #545454;
+}
+
+.fig-heading {
+    font-size: var(--fs0);
+    line-height: 1.2;
+    color: #121212;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    display: block;
 }
 
 /* For figcaption in project cards, homepage */
