@@ -27,8 +27,8 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 <template>
     <main>
         <hgroup>
-            <h2 class="noto-sans-eight-italic">{{ greeting }}</h2>
-            <h3 class="noto-sans-four">View maps, data visualization, guided work flows, directories</h3>
+            <h2 class="noto-sans eight italic">{{ greeting }}</h2>
+            <h3 class="noto-sans four">View maps, data visualization, guided work flows, directories</h3>
         </hgroup>
         <div class="projects">
             <div class="project-card" v-for="content in contents" :key="content.id">
@@ -39,8 +39,8 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                             :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="project-card-caption noto-sans-four">
-                            <span class="fig-heading noto-sans-seven">{{ content.thumbHead }}</span>
+                        <figcaption class="project-card-caption noto-sans four">
+                            <span class="fig-heading noto-sans seven">{{ content.thumbHead }}</span>
                             {{ content.thumbSub }}
                         </figcaption>
                     </figure>

@@ -471,49 +471,34 @@ button:hover {
 }
 
 /* Fonts from Google */
-.noto-sans-four {
+.noto-sans {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Font weights */
+.four {
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
-.noto-sans-five {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
+.five {
     font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
-.noto-sans-seven {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
+.seven {
     font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
-.noto-sans-eight {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
+.eight {
     font-weight: 800;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
-.noto-sans-eight-italic {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
+/* Font style */
+.italic {
     font-style: italic;
-    font-variation-settings:
-        "wdth" 100;
 }
 
 /* Headings, H-tags */
@@ -521,7 +506,7 @@ h1 {
     font-size: var(--fs2);
     line-height: 1.5;
     display: inline-flex; /* Keeps hyperlink to only text */
-    color: #D92B2B; /* red */
+    color: #d92b2b; /* red */
 }
 
 h2 {

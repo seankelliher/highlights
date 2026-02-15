@@ -10,10 +10,10 @@ onMounted(() => {
 
 <template>
     <footer>
-        <button class="noto-sans-four">
+        <button class="noto-sans four">
             <a :href="`mailto:${address}`">Email</a>
         </button>
-        <button class="noto-sans-four">
+        <button class="noto-sans four">
             <a href="https://github.com/seankelliher" target="_blank">GitHub</a>
         </button>
     </footer>
