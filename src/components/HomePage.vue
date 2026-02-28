@@ -26,11 +26,13 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 
 <template>
     <main>
-        <hgroup>
-            <h2 class="noto-sans eight italic">{{ greeting }}</h2>
-            <h3 class="noto-sans four">View maps, data visualization, guided work flows, directories</h3>
-        </hgroup>
         <div class="projects">
+            <div class="project-card-first">
+                <hgroup>
+                    <h2 class="noto-sans eight italic">{{ greeting }}</h2>
+                    <p class="noto-sans four">I created these projects to develop UI/UX design and storytelling skills. For process, I researched topics that interested me such as fertility rates in nations around the globe. I then designed wireframes, selected typography and planned color schemes. I built the interfaces with a JavaScript framework, ensuring they were responsive and accessible. Some projects use maps and open source APIs.</p>
+                </hgroup>
+            </div>
             <div class="project-card" v-for="content in contents" :key="content.id">
                 <RouterLink :to="`/projects/${content.id}`" aria-label="project thumbnail, leads to project page">
                     <figure class="project-image">
