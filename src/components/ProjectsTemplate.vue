@@ -21,11 +21,12 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
 <template>
     <div class="intro">
         <!-- Primary headlines -->
-        <hgroup>
-            <h2 class="noto-sans eight">{{ projectContent.headline }}</h2>
-            <h3 class="noto-sans four">{{ projectContent.subHeadline }}</h3>
-        </hgroup>
-
+        <div class="intro-headline">
+            <hgroup>
+                <h2 class="noto-sans eight">{{ projectContent.headline }}</h2>
+                <p class="noto-sans four">{{ projectContent.subHeadline }}</p>
+            </hgroup>
+        </div>
         <!-- Primary content -->
         <div class="intro-card">
             <figure class="intro-image">
@@ -39,7 +40,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 </figcaption>
             </figure>
             <div class="intro-text">
-                <h2 class="noto-sans eight">What this does</h2>
+                <h3 class="noto-sans eight">What this does</h3>
                 <p class="noto-sans four">{{ projectContent.summary }}</p>
             </div>
         </div>
@@ -92,10 +93,10 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
         </div>
     </div>
     <!-- Wireframes -->
-    <main>
+    <div class="design">
         <hgroup>
-            <h2 class="noto-sans eight">Wireframes</h2>
-            <h3 class="noto-sans four">The interface was built based on these initial drawings</h3>
+            <h3 class="noto-sans eight">Wireframes</h3>
+            <p class="noto-sans four">The interface was built based on these initial drawings</p>
         </hgroup>
         <div class="wireframes">
             <figure
@@ -106,7 +107,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 <figcaption class="wire-caption noto-sans four">{{ wireframe.caption }}</figcaption>
             </figure>
         </div>
-    </main>
+    </div>
 </template>
 
 <style scoped>
