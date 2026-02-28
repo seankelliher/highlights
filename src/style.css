@@ -145,7 +145,7 @@ main {
 /* Headings for main content, all pages */
 hgroup {
     width: 100%;
-    margin: 1em 0;
+    margin: 0;
     padding: 0;
     flex: initial;
 }
@@ -251,6 +251,13 @@ figure.project-image {
     align-items: flex-start;
 }
 
+.intro-headline {
+    width: 100%;
+    margin: 1em 0;
+    padding: 0;
+    flex: initial;
+}
+
 /* Primary content, left side on larger screens */
 .intro-card {
     flex: initial;
@@ -344,6 +351,17 @@ figure.intro-sidebar-image {
     figure.intro-sidebar-image {
         width: 25%;
     }
+}
+
+.design {
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 0;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .wireframes {
@@ -479,26 +497,15 @@ h1 {
 }
 
 h2 {
-    width: 100%;
     font-size: var(--fs3);
-    line-height: 1.5;
-    margin-bottom: 0.25em;
+    line-height: 1.2;
     color: #121212;
 }
 
 h3 {
     font-size: var(--fs1);
-    line-height: 1.4;
-    margin-top: 0;
+    line-height: 1.2;
     color: #121212;
-}
-
-h4 {
-    font-size: var(--fs0);
-    line-height: 1.4;
-    color: #121212;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
 }
 
 /* P-tag */
