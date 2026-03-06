@@ -40,7 +40,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 </figcaption>
             </figure>
             <div class="intro-text">
-                <h3 class="noto-sans eight">What this does</h3>
+                <h3 class="noto-sans eight">What This Does</h3>
                 <p class="noto-sans four">{{ projectContent.summary }}</p>
             </div>
         </div>
@@ -50,7 +50,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Working version</dt>
+                        <dt class="noto-sans eight">Working Version</dt>
                         <dd class="noto-sans four">
                             <a
                                 :href="`https://${projectContent.platformUrl}`"
@@ -68,7 +68,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Source code</dt>
+                        <dt class="noto-sans eight">Source Code</dt>
                         <dd class="noto-sans four">
                             <a
                                 :href="`https://github.com/seankelliher/${projectContent.id}`"
