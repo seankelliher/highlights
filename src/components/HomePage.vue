@@ -29,8 +29,8 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
         <div class="projects">
             <div class="project-card-first">
                 <hgroup>
-                    <h2 class="noto-sans eight italic">{{ greeting }}</h2>
-                    <p class="noto-sans four">I created these projects to develop UI/UX design and storytelling skills. For process, I researched topics that interested me such as fertility rates in nations around the globe. I then designed wireframes, selected typography and planned color schemes. I built the interfaces with a JavaScript framework, ensuring they were responsive and accessible. Some projects use maps and open source APIs.</p>
+                    <h2 class="noto-sans eight">Graphics &amp; Maps</h2>
+                    <p class="noto-sans four">{{ greeting }}. These  graphics and maps began as simple paper drawings. I then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects also utilize open source APIs.</p>
                 </hgroup>
             </div>
             <div class="project-card" v-for="content in contents" :key="content.id">
