@@ -23,7 +23,7 @@ const hideMenu = () => {
         <div v-if="menu" class="overlay">
         </div>
         <RouterLink to="/">
-            <h1 class="noto-sans eight">Sean Kelliher</h1>
+            <h1 class="merriweather seven">Sean Kelliher</h1>
         </RouterLink>
 
         <!-- Menu "hamburger" icon -->

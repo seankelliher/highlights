@@ -447,7 +447,16 @@ button:hover {
     flex: initial;
 }
 
-/* Fonts from Google */
+/* Merriweather font - use font-weight from 300 to 900 */
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Noto Sans font - use font-weight from 100 to 900 */
 .noto-sans {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
@@ -473,14 +482,9 @@ button:hover {
     font-weight: 800;
 }
 
-/* Font style */
-.italic {
-    font-style: italic;
-}
-
 /* Headings, H-tags */
 h1 {
-    font-size: var(--fs2);
+    font-size: var(--fs1);
     line-height: 1.5;
     display: inline-flex; /* Keeps hyperlink to only text */
     color: #d92b2b; /* red */
