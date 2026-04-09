@@ -26,22 +26,22 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 
 <template>
     <main>
-        <div class="projects">
-            <div class="project-card-first">
+        <div class="home-grid">
+            <div class="home-grid-intro">
                 <hgroup>
                     <h2 class="noto-sans eight">Graphics &amp; Maps</h2>
                     <p class="noto-sans four">{{ greeting }}. These  graphics and maps began as simple paper drawings. I then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects also utilize open source APIs.</p>
                 </hgroup>
             </div>
-            <div class="project-card" v-for="content in contents" :key="content.id">
+            <div class="home-grid-card" v-for="content in contents" :key="content.id">
                 <RouterLink :to="`/projects/${content.id}`" aria-label="project thumbnail, leads to project page">
-                    <figure class="project-image">
+                    <figure class="home-grid-img">
                         <img
                             :src="`/images/scenes/${content.src}-thumb.jpg`"
                             :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="project-card-caption noto-sans four">
+                        <figcaption class="home-grid-card-caption noto-sans four">
                             <span class="fig-heading noto-sans seven">{{ content.thumbHead }}</span>
                             {{ content.thumbSub }}
                         </figcaption>

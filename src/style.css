@@ -149,8 +149,8 @@ hgroup {
     flex: initial;
 }
 
-/* Thumbnails on homepage */
-.projects {
+/* Homepage grid */
+.home-grid {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -159,16 +159,16 @@ hgroup {
     grid-auto-rows: auto;
 }
 
-.project-card-first {
-    margin: 0; /* Longhand 0 0 2em 0 */
+.home-grid-intro {
+    margin: 0;
     padding: 1em 5%;
     background: #f4f4f1; /* warm brown */
     border-radius: 12px;
     flex: initial;
 }
 
-.project-card {
-    margin: 0; /* Longhand 0 0 2em 0 */
+.home-grid-card {
+    margin: 0;
     padding: 0;
     background: #f4f4f1; /* warm brown */
     border-radius: 12px;
@@ -179,49 +179,49 @@ hgroup {
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
-    .projects {
+    .home-grid {
         grid-template-columns: 1fr;
         row-gap: 1em;
     }
 }
 
 @media (min-width: 400px) and (max-width: 599px) {
-    .projects {
+    .home-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em; /* column-gap + row-gap */
     }
 
-    .project-card-first {
+    .home-grid-intro {
         grid-column: 1 / 3; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2;  /* grid-row-start / grid-row-end */
     }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-    .projects {
+    .home-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5em; /* column-gap + row-gap */
     }
 
-    .project-card-first {
+    .home-grid-intro {
         grid-column: 1 / 4; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2;  /* grid-row-start / grid-row-end */
     }
 }
 
 @media (min-width: 900px) {
-    .projects {
+    .home-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 2em; /* column-gap + row-gap */
     }
 
-    .project-card-first {
+    .home-grid-intro {
         grid-column: 1 / 5; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2; /*  grid-row-start / grid-row-end */
     }
 }
 
-figure.project-image {
+figure.home-grid-img {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -531,7 +531,7 @@ figcaption {
 }
 
 /* For figcaption in project cards, homepage */
-.project-card-caption {
+.home-grid-card-caption {
     padding: 1em 5%;
     text-align: left;
 }
