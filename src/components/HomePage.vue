@@ -41,7 +41,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                             :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="home-grid-card-caption noto-sans four">
+                        <figcaption class="home-grid-img-caption noto-sans four">
                             <span class="fig-heading noto-sans seven">{{ content.thumbHead }}</span>
                             {{ content.thumbSub }}
                         </figcaption>
