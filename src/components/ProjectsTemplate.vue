@@ -40,7 +40,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 </figcaption>
             </figure>
             <div class="intro-text">
-                <h3 class="noto-sans eight">What This Does</h3>
+                <h3 class="noto-sans eight">About the Interface</h3>
                 <p class="noto-sans four">{{ projectContent.summary }}</p>
             </div>
         </div>
