@@ -51,17 +51,18 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 <div class="intro-sidebar-text">
                     <dl>
                         <dt class="noto-sans eight">Working Version</dt>
-                        <dd class="noto-sans four">
-                            <a
-                                :href="`https://${projectContent.platformUrl}`"
-                                target="_blank"
-                                class="blue"
-                            >
-                                View on {{ projectContent.platform }}
-                            </a> <span v-if="projectContent.platformWarn">{{ projectContent.platformWarn }}</span>
+                        <dd class="noto-sans four">Available on {{ projectContent.platform }} <span v-if="projectContent.platformWarn">{{ projectContent.platformWarn }}</span>
                         </dd>
                     </dl>
                 </div>
+                <button class="btn-sm">
+                    <a
+                        :href="`https://${projectContent.platformUrl}`"
+                        target="_blank"
+                    >
+                        View
+                    </a>
+                </button>
             </div>
 
             <!-- GitHub card -->
@@ -69,24 +70,24 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 <div class="intro-sidebar-text">
                     <dl>
                         <dt class="noto-sans eight">Source Code</dt>
-                        <dd class="noto-sans four">
-                            <a
-                                :href="`https://github.com/seankelliher/${projectContent.id}`"
-                                target="_blank"
-                                class="blue"
-                            >
-                                View on GitHub
-                            </a>
-                        </dd>
+                        <dd class="noto-sans four">Available on GitHub</dd>
                     </dl>
                 </div>
+                <button class="btn-sm">
+                    <a
+                        :href="`https://github.com/seankelliher/${projectContent.id}`"
+                        target="_blank"
+                    >
+                        View
+                    </a>
+                </button>
             </div>
             <!-- Technologies card -->
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Technologies</dt>
-                        <dd class="noto-sans four">{{ projectContent.techs }}</dd>
+                        <dt class="noto-sans eight">Acknowledgment</dt>
+                        <dd class="noto-sans four">Interface created with {{ projectContent.techs }}</dd>
                     </dl>
                 </div>
             </div>
