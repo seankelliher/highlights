@@ -31,7 +31,7 @@ a {
     color: #121212;
 }
 
-/* Makes links blue */
+/* Makes links blue, if needed */
 .blue {
     text-decoration: underline;
     color: #0468BF; /* blue */
@@ -283,27 +283,20 @@ figure.intro-image {
 }
 
 .intro-sidebar-card {
-    width: 100%;
+    width: 90%;
     margin: 0 0 2em;
-    padding: 1em 0;
+    padding: 1em 5%;
     background: #f4f4f1; /* warm brown */
     border-radius: 12px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .intro-sidebar-text {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-    flex: initial;
-}
-
-figure.intro-sidebar-image {
-    /* width: 25%; */
+    width: 100%;
     margin: 0;
     padding: 0;
     flex: initial;
@@ -321,10 +314,6 @@ figure.intro-sidebar-image {
     .intro-sidebar {
         width: 100%;
     }
-
-    figure.intro-sidebar-image {
-        width: 15%;
-    }
 }
 
 @media (min-width: 800px)  {
@@ -336,10 +325,6 @@ figure.intro-sidebar-image {
 
     .intro-sidebar {
         width: 40%;
-    }
-
-    figure.intro-sidebar-image {
-        width: 25%;
     }
 }
 
@@ -419,22 +404,32 @@ footer::before {
 
 button {
     width: 100px;
-    margin: 0 20px;
+    padding: 0;
     background: #d92b2b; /* red */
     border: none;
     border-radius: 16px;
-    color: #fff;
-    font-size: var(--fs0);
     line-height: 1.8;
+    color: #fff;
     box-shadow: 2px 2px 4px 1px #e6e6e3;
 }
 
 button a {
     color: #fff;
+    display: block;
 }
 
 button:hover {
     text-decoration: underline;
+}
+
+.btn-lg {
+    margin: 0 20px;
+    font-size: var(--fs0);
+}
+
+.btn-sm {
+    margin: 1em 0 0; /* Longhand 1em 0 0 0 */
+    font-size: var(--fs-1);
 }
 
 /* For "not found" or "404" page */
@@ -449,7 +444,7 @@ button:hover {
 
 /* Merriweather font - use font-weight from 300 to 900 */
 .merriweather {
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-variation-settings:
