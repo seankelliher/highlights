@@ -10,17 +10,14 @@ onMounted(() => {
 
 <template>
     <footer>
-        <button class="noto-sans four">
+        <button class="noto-sans four btn-lg">
             <a :href="`mailto:${address}`">Email</a>
         </button>
-        <button class="noto-sans four">
+        <button class="noto-sans four btn-lg">
             <a href="https://github.com/seankelliher" target="_blank">GitHub</a>
         </button>
     </footer>
 </template>
 
 <style scoped>
-    a {
-        display: block;
-    }
 </style>
