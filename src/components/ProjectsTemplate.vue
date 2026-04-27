@@ -23,8 +23,8 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
         <!-- Primary headlines -->
         <div class="intro-headline">
             <hgroup>
-                <h2 class="noto-sans eight">{{ projectContent.headline }}</h2>
-                <p class="noto-sans four">{{ projectContent.subHeadline }}</p>
+                <h2>{{ projectContent.headline }}</h2>
+                <p>{{ projectContent.subHeadline }}</p>
             </hgroup>
         </div>
         <!-- Primary content -->
@@ -35,13 +35,13 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                     :alt="`${projectContent.alt}`"
                     class="rounded"
                 >
-                <figcaption class="intro-card-caption noto-sans four">
+                <figcaption class="intro-card-caption">
                     {{ projectContent.caption }}
                 </figcaption>
             </figure>
             <div class="intro-text">
-                <h3 class="noto-sans eight">About the Interface</h3>
-                <p class="noto-sans four">{{ projectContent.summary }}</p>
+                <h3>About the Interface</h3>
+                <p>{{ projectContent.summary }}</p>
             </div>
         </div>
         <!-- Supporting sidebar -->
@@ -50,8 +50,8 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Working Version</dt>
-                        <dd class="noto-sans four">Available on {{ projectContent.platform }} <span v-if="projectContent.platformWarn">{{ projectContent.platformWarn }}</span>
+                        <dt>Working Version</dt>
+                        <dd>Available on {{ projectContent.platform }} <span v-if="projectContent.platformWarn">{{ projectContent.platformWarn }}</span>
                         </dd>
                     </dl>
                 </div>
@@ -69,8 +69,8 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Source Code</dt>
-                        <dd class="noto-sans four">Available on GitHub</dd>
+                        <dt>Source Code</dt>
+                        <dd>Available on GitHub</dd>
                     </dl>
                 </div>
                 <button class="btn-sm">
@@ -86,8 +86,8 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
             <div class="intro-sidebar-card">
                 <div class="intro-sidebar-text">
                     <dl>
-                        <dt class="noto-sans eight">Acknowledgment</dt>
-                        <dd class="noto-sans four">Interface created with {{ projectContent.techs }}</dd>
+                        <dt>Acknowledgment</dt>
+                        <dd>Interface created with {{ projectContent.techs }}</dd>
                     </dl>
                 </div>
             </div>
@@ -96,8 +96,8 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
     <!-- Wireframes -->
     <div class="design">
         <hgroup>
-            <h3 class="noto-sans eight">Wireframes</h3>
-            <p class="noto-sans four">The interface was built based on these initial drawings</p>
+            <h3>Wireframes</h3>
+            <p>The interface was built based on these initial drawings</p>
         </hgroup>
         <div class="wireframes">
             <figure
@@ -105,7 +105,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 :key="wireframe.src"
                 class="wireframe">
                 <img class="rounded" :src="`/images/wireframes/${wireframe.src}.png`" alt="{{ wireframe.alt }}">
-                <figcaption class="wire-caption noto-sans four">{{ wireframe.caption }}</figcaption>
+                <figcaption class="wire-caption">{{ wireframe.caption }}</figcaption>
             </figure>
         </div>
     </div>

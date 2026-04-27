@@ -29,10 +29,17 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
         <div class="home-grid">
             <div class="home-grid-intro">
                 <hgroup>
-                    <h2 class="noto-sans eight">Graphics &amp; Maps</h2>
-                    <p class="noto-sans four">{{ greeting }}. These  graphics and maps began as simple paper drawings. I then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects also utilize open source APIs.</p>
+                    <h2>UI/UX Side Projects</h2>
+                    <p>I drew these interfaces on paper, then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects utilize open source APIs.</p>
                 </hgroup>
             </div>
+
+            <div class="home-grid-notice">
+                <div class="home-grid-notice-card">
+                    <span class="notice">{{ greeting }}. NYC discontinued the dataset "NYC Shootings" uses. I'm working on a fix.</span>
+                </div>
+            </div>
+
             <div class="home-grid-card" v-for="content in contents" :key="content.id">
                 <RouterLink :to="`/projects/${content.id}`" aria-label="project thumbnail, leads to project page">
                     <figure class="home-grid-img">
@@ -41,8 +48,8 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                             :alt="`${content.alt}`"
                             class="rounded"
                         >
-                        <figcaption class="home-grid-img-caption noto-sans four">
-                            <span class="fig-heading noto-sans seven">{{ content.thumbHead }}</span>
+                        <figcaption class="home-grid-img-caption">
+                            <span class="fig-heading">{{ content.thumbHead }}</span>
                             {{ content.thumbSub }}
                         </figcaption>
                     </figure>

@@ -5,13 +5,28 @@
   --fs1: clamp(1.0547rem, 0.9171rem + 0.6114vw, 1.4063rem);
   --fs2: clamp(1.1865rem, 1.0318rem + 0.6878vw, 1.582rem);
   --fs3: clamp(1.3348rem, 1.1607rem + 0.7738vw, 1.7798rem);
+  --layer-01: #fff; /* White */
+  --background: #f4f4f4; /* Gray 10 */
+  --layer-selected-01: #e0e0e0; /* Gray 20 */
+  --layer-selected-inverse: #161616; /* Gray 100 */
+  --text-primary: #161616; /* Gray 100 */
+  --text-secondary: #525252; /* Gray 70 */
+  --syntax-heading-2: #0072c3; /* Cyan 70 */
+  --tag-background-blue: #d0e2ff; /* Blue 20 */
+  --tag-border-blue: #78a9ff; /* Blue 40 */
+  --tag-color-blue: #0043ce; /* Blue 70 */
+  --button-primary: #0f62fe; /* Blue 60 */
+  --text-on-color: #fff; /* White */
+  --border-subtle-01: #e0e0e0; /* Gray 20 */
+  --border-subtle-02: #c6c6c6; /* Gray 30 */
+  --highlight: #d0e2ff; /* Blue 20 */
 }
 
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
     margin-top: 0;
     margin-bottom: 0;
-    background: #fff;
+    background: var(--background);
 }
 
 /* Image becomes no larger than actual size */
@@ -28,17 +43,7 @@ img {
 /* Baseline for links, needed for nav links */
 a {
     text-decoration: none;
-    color: #121212;
-}
-
-/* Makes links blue, if needed */
-.blue {
-    text-decoration: underline;
-    color: #0468BF; /* blue */
-}
-
-.blue:hover {
-    text-decoration: none;
+    color: var(--text-primary);
 }
 
 #container {
@@ -69,8 +74,7 @@ header::before {
     content: "";
     position: absolute;
     inset: 0 calc((100vw - 100%) / -2);
-    background: #f4f4f1; /* warm brown */
-    border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
+    background: var(--layer-selected-inverse);
     z-index: -1;
 }
 
@@ -92,7 +96,6 @@ nav {
     overflow-y: scroll;
     margin: 0;
     padding: 0;
-    background: #fff;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -104,7 +107,7 @@ nav {
 .overlay {
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    background: var(--background);
     opacity: 1;
     position: fixed;
     top: 0;
@@ -141,7 +144,7 @@ main {
     }
 }
 
-/* Headings for main content, all pages */
+/* Groups H + P tags, all pages */
 hgroup {
     width: 100%;
     margin: 0;
@@ -161,16 +164,31 @@ hgroup {
 
 .home-grid-intro {
     margin: 0;
-    padding: 1em 5%;
-    background: #f4f4f1; /* warm brown */
+    padding: 0;
+}
+
+.home-grid-notice {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-grid-notice-card {
+    width: 90%;
+    margin: 0;
+    padding: 0.5em 5%;
+    background: var(--tag-background-blue);
+    border: 2px solid var(--tag-border-blue);
     border-radius: 12px;
-    flex: initial;
 }
 
 .home-grid-card {
     margin: 0;
     padding: 0;
-    background: #f4f4f1; /* warm brown */
+    background: var(--layer-01);
     border-radius: 12px;
     display: flex;
     flex-flow: row wrap;
@@ -183,6 +201,10 @@ hgroup {
         grid-template-columns: 1fr;
         row-gap: 1em;
     }
+
+    .home-grid-intro {
+        border-bottom: 1px solid var(--border-subtle-01);
+    }
 }
 
 @media (min-width: 400px) and (max-width: 599px) {
@@ -194,6 +216,12 @@ hgroup {
     .home-grid-intro {
         grid-column: 1 / 3; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2;  /* grid-row-start / grid-row-end */
+        border-bottom: 1px solid var(--border-subtle-01);
+    }
+
+    .home-grid-notice {
+        grid-column: 1 / 3; /* grid-column-start / grid-column-end */
+        grid-row: 2 / 3; /*  grid-row-start / grid-row-end */
     }
 }
 
@@ -206,6 +234,12 @@ hgroup {
     .home-grid-intro {
         grid-column: 1 / 4; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2;  /* grid-row-start / grid-row-end */
+        border-bottom: 1px solid var(--border-subtle-01);
+    }
+
+    .home-grid-notice {
+        grid-column: 1 / 4; /* grid-column-start / grid-column-end */
+        grid-row: 2 / 3; /*  grid-row-start / grid-row-end */
     }
 }
 
@@ -216,7 +250,12 @@ hgroup {
     }
 
     .home-grid-intro {
-        grid-column: 1 / 5; /* grid-column-start / grid-column-end */
+        grid-column: 1 / 4; /* grid-column-start / grid-column-end */
+        grid-row: 1 / 2; /*  grid-row-start / grid-row-end */
+    }
+
+    .home-grid-notice {
+        grid-column: 4 / 5; /* grid-column-start / grid-column-end */
         grid-row: 1 / 2; /*  grid-row-start / grid-row-end */
     }
 }
@@ -228,12 +267,12 @@ figure.home-grid-img {
     flex: initial;
 }
 
-/* Container for "project" pages */
+/* Project pages */
 .intro {
     width: 95%;
     margin: 0 2.5%;
     padding: 0;
-    border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
+    border-bottom: 1px solid var(--border-subtle-01);
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -243,12 +282,12 @@ figure.home-grid-img {
 
 .intro-headline {
     width: 100%;
+    max-width: 700px;
     margin: 1em 0;
     padding: 0;
     flex: initial;
 }
 
-/* Primary content, left side on larger screens */
 .intro-card {
     flex: initial;
     display: flex;
@@ -271,7 +310,6 @@ figure.intro-image {
     flex: initial;
 }
 
-/* Supporting sidebar content, right side on larger screens */
 .intro-sidebar {
     margin: 0;
     padding: 0;
@@ -286,7 +324,7 @@ figure.intro-image {
     width: 90%;
     margin: 0 0 2em;
     padding: 1em 5%;
-    background: #f4f4f1; /* warm brown */
+    background: var(--layer-selected-01);
     border-radius: 12px;
     flex: initial;
     display: flex;
@@ -302,13 +340,12 @@ figure.intro-image {
     flex: initial;
 }
 
-/* Media queries for primary content and supporting sidebar */
 @media (min-width: 300px) and (max-width: 799px) {
     .intro-card {
         width: 100%;
         margin: 0 0 2em;
         padding: 0 0 1em;
-        border-bottom: 1px solid #e6e6e3; /* #e6e6e3 */
+        border-bottom: 1px solid var(--border-subtle-01);
     }
 
     .intro-sidebar {
@@ -320,7 +357,7 @@ figure.intro-image {
     .intro-card {
         width: 55%;
         padding: 0 2.5% 1em 0;
-        border-right: 1px solid #e6e6e3; /* #e6e6e3 */
+        border-right: 1px solid var(--border-subtle-01);
     }
 
     .intro-sidebar {
@@ -353,7 +390,7 @@ figure.intro-image {
 figure.wireframe {
     margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
-    border: 1px solid #dfe3e7; /* N-90 */
+    border: 1px solid var(--border-subtle-01);
     border-radius: 12px;
     flex: initial;
 }
@@ -370,20 +407,9 @@ figure.wireframe {
     }
 }
 
-/* Currently not used */
-figure.flow-chart {
-    width: 100%;
-    margin: 0 0 2em; /* Longhand 0 0 2em 0 */
-    padding: 0;
-    border: 2px solid #c1c7ce; /* NV-80 */
-    border-radius: 6px;
-    box-shadow: 2px 2px 4px 1px #dfe3e7; /* N-90 */
-    flex: initial;
-}
-
 footer {
     width: 95%;
-    margin: 0; /* Longhand 2em 0 0 0 */
+    margin: 0;
     padding: 1em 2.5%;
     flex: initial;
     display: flex;
@@ -396,25 +422,25 @@ footer {
 footer::before {
     content: "";
     position: absolute;
-    background: #f4f4f1;
-    border-top: 1px solid #e6e6e3;
+    background: var(--layer-selected-01);
+    border-top: 1px solid var(border-subtle-02);
     inset: 0 calc((100vw - 100%) / -2);
     z-index: -1;
 }
 
+/* Buttons */
 button {
     width: 100px;
     padding: 0;
-    background: #d92b2b; /* red */
+    background: var(--button-primary);
     border: none;
     border-radius: 16px;
     line-height: 1.8;
-    color: #fff;
-    box-shadow: 2px 2px 4px 1px #e6e6e3;
+    color: var(--text-on-color);
 }
 
 button a {
-    color: #fff;
+    color: var(--text-on-color);
     display: block;
 }
 
@@ -434,92 +460,103 @@ button:hover {
 
 /* For "not found" or "404" page */
 .error-text {
-    width: 90%;
-    margin: 2em 2.5% 0; /* Longhand 2em 2.5% 0 2.5% */
-    padding: 0 2.5%;
-    background: #eaeef2; /* N-94 */
-    border-radius: 6px;
+    width: 95%;
+    margin: 0; /* Longhand 2em 2.5% 0 2.5% */
+    padding: 2em 2.5%;
     flex: initial;
 }
 
-/* Merriweather font - use font-weight from 300 to 900 */
-.merriweather {
-  font-family: Merriweather, serif;
-  font-optical-sizing: auto;
-  font-style: italic;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-/* Noto Sans font - use font-weight from 100 to 900 */
-.noto-sans {
+/* Headings - Noto sans has font-weight 100 to 900 */
+h1 {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-}
-
-/* Font weights */
-.four {
-    font-weight: 400;
-}
-
-.five {
-    font-weight: 500;
-}
-
-.seven {
-    font-weight: 700;
-}
-
-.eight {
-    font-weight: 800;
-}
-
-/* Headings, H-tags */
-h1 {
-    font-size: var(--fs1);
+    font-size: var(--fs0);
     line-height: 1.5;
+    color: var(--text-on-color);
     display: inline-flex; /* Keeps hyperlink to only text */
-    color: #d92b2b; /* red */
 }
 
 h2 {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs3);
     line-height: 1.2;
-    color: #121212;
+    color: var(--syntax-heading-2);
 }
 
 h3 {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs1);
     line-height: 1.2;
-    color: #121212;
+    color: var(--text-primary);
 }
 
-/* P-tag */
+/* Paragraph */
 p {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs0);
     line-height: 1.8;
-    color: #121212;
+    color: var(--text-primary);
 }
 
 p a {
     text-decoration: underline;
-    color: #121212;
+    color: var(--text-primary);
 }
 
-/* FIGCAPTIONS AND RELATED */
-figcaption {
+/* Homepage notice */
+.notice {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs-1);
     line-height: 1.5;
-    color: #545454;
+    color: var(--tag-color-blue);
+}
+
+/* Figcaptions and related */
+figcaption {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: var(--fs-1);
+    line-height: 1.5;
+    color: var(--text-secondary);
 }
 
 .fig-heading {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs0);
     line-height: 1.2;
-    color: #121212;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     display: block;
@@ -550,16 +587,28 @@ dl {
 }
 
 dt {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs0);
     line-height: 1.8;
-    color: #121212;
+    color: var(--text-primary);
 }
 
 dd {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs0);
     line-height: 1.6;
+    color: var(--text-primary);
     margin-left: 0;
-    color: #121212;
 }
 
 /* Font items within nav (aka menu) */
@@ -567,24 +616,31 @@ dd {
     width: 80%;
     margin: 0;
     padding: 0 10%;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: var(--fs0);
     line-height: 2.5;
+    color: var(--text-primary);
     display: inline-flex;
     text-align: center;
 }
 
 .menu-item:hover {
-    background: #e6e6e3;
+    background: var(--layer-selected-01);
 }
 
 /* Router links */
 nav .router-link-exact-active {
     text-decoration: none;
-    color: #121212;
+    color: var(--text-primary);
 }
 
 nav .router-link-active {
     width: 100%;
-    background: #ccccca;
+    background: var(--highlight);
     text-decoration: none;
 }
