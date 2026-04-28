@@ -5,9 +5,9 @@ document.querySelector("meta[name='description']").setAttribute("content", "404 
 </script>
 
 <template>
-    <div class="error-text">
+    <main>
         <p>Sorry, the page you're looking for was not found - error 404.</p>
-    </div>
+    </main>
 </template>
 
 <style scoped>
