@@ -34,7 +34,6 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                     <img
                         :src="`/images/scenes/${projectContent.src}-full.jpg`"
                         :alt="`${projectContent.alt}`"
-                        class="rounded"
                     >
                     <figcaption class="intro-card-caption">
                         {{ projectContent.caption }}
@@ -105,7 +104,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                     v-for="wireframe in projectContent.wireframes"
                     :key="wireframe.src"
                     class="wireframe">
-                    <img class="rounded" :src="`/images/wireframes/${wireframe.src}.png`" alt="{{ wireframe.alt }}">
+                    <img :src="`/images/wireframes/${wireframe.src}.png`" alt="{{ wireframe.alt }}">
                     <figcaption class="wire-caption">{{ wireframe.caption }}</figcaption>
                 </figure>
             </div>

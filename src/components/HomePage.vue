@@ -46,7 +46,6 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
                         <img
                             :src="`/images/scenes/${content.src}-thumb.jpg`"
                             :alt="`${content.alt}`"
-                            class="rounded"
                         >
                         <figcaption class="home-grid-img-caption">
                             <span class="fig-heading">{{ content.thumbHead }}</span>
