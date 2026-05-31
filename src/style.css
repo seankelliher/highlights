@@ -36,10 +36,6 @@ img {
     display: block;
 }
 
-.rounded {
-    border-radius: 12px;
-}
-
 /* Baseline for links, needed for nav links */
 a {
     text-decoration: none;
@@ -183,14 +179,12 @@ hgroup {
     padding: 0.5em 5%;
     background: var(--tag-background-blue);
     border: 2px solid var(--tag-border-blue);
-    border-radius: 12px;
 }
 
 .home-grid-card {
     margin: 0;
     padding: 0;
     background: var(--layer-01);
-    border-radius: 12px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -326,7 +320,6 @@ figure.intro-image {
     margin: 0 0 2em;
     padding: 1em 5%;
     background: var(--layer-selected-01);
-    border-radius: 12px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -392,7 +385,6 @@ figure.wireframe {
     margin: 0 0 2em; /* Longhand 0 0 2em 0 */
     padding: 0;
     border: 1px solid var(--border-subtle-01);
-    border-radius: 12px;
     flex: initial;
 }
 
@@ -542,16 +534,7 @@ figcaption {
 }
 
 .fig-heading {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    font-size: var(--fs0);
-    line-height: 1.2;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
     display: block;
 }
 
