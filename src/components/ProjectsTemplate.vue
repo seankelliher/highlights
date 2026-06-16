@@ -39,10 +39,6 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                         {{ projectContent.caption }}
                     </figcaption>
                 </figure>
-                <div class="intro-text">
-                    <h3>About the Interface</h3>
-                    <p>{{ projectContent.summary }}</p>
-                </div>
             </div>
             <!-- Supporting sidebar -->
             <div class="intro-sidebar">
@@ -82,13 +78,21 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                         </a>
                     </button>
                 </div>
+            </div>
+        </div>
+        <div class="intro2">
+            <div class="intro-card">
+                <div class="intro-text">
+                    <h3>Summary</h3>
+                    <p>{{ projectContent.summary }}</p>
+                </div>
+            </div>
+            <div class="intro-sidebar">
                 <!-- Technologies card -->
-                <div class="intro-sidebar-card">
+                <div class="info-card">
                     <div class="intro-sidebar-text">
-                        <dl>
-                            <dt>Acknowledgment</dt>
-                            <dd>Interface created with {{ projectContent.techs }}</dd>
-                        </dl>
+                        <!--<h3>Technologies</h3>-->
+                        <p>The interface was created with the software programs {{ projectContent.techs }}.</p>
                     </div>
                 </div>
             </div>

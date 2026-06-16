@@ -19,6 +19,8 @@
   --text-on-color: #fff; /* White */
   --border-subtle-01: #e0e0e0; /* Gray 20 */
   --border-subtle-02: #c6c6c6; /* Gray 30 */
+  --notification-background-info: #edf5ff; /* Blue 10 */
+  --border-interactive: #0f62fe; /* Blue 60 */;
   --highlight: #d0e2ff; /* Blue 20 */
 }
 
@@ -267,12 +269,24 @@ figure.home-grid-img {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid var(--border-subtle-01);
     flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.intro2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--border-subtle-01);
+    border-bottom: 1px solid var(--border-subtle-01);
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .intro-headline {
@@ -318,8 +332,22 @@ figure.intro-image {
 .intro-sidebar-card {
     width: 90%;
     margin: 0 0 2em;
-    padding: 1em 5%;
-    background: var(--layer-selected-01);
+    padding: 0 5%;
+    background: var(--layer-01);
+    border: 1px solid var(--border-subtle-01);
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info-card {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    background: var(--notification-background-info);
+    border: 1px solid var(--border-interactive);
     flex: initial;
     display: flex;
     flex-flow: row wrap;
@@ -344,6 +372,11 @@ figure.intro-image {
 
     .intro-sidebar {
         width: 100%;
+    }
+
+    .info-card {
+        margin-bottom: 2em;
+
     }
 }
 
@@ -427,7 +460,7 @@ button {
     padding: 0;
     background: var(--button-primary);
     border: none;
-    border-radius: 16px;
+    /*border-radius: 16px;*/
     line-height: 1.8;
     color: var(--text-on-color);
 }
@@ -447,7 +480,7 @@ button:hover {
 }
 
 .btn-sm {
-    margin: 1em 0 0; /* Longhand 1em 0 0 0 */
+    margin: 0 0 1em; /* Longhand 0 0 1em 0 */
     font-size: var(--fs-1);
 }
 
