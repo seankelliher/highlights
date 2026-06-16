@@ -460,7 +460,6 @@ button {
     padding: 0;
     background: var(--button-primary);
     border: none;
-    /*border-radius: 16px;*/
     line-height: 1.8;
     color: var(--text-on-color);
 }
