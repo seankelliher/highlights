@@ -284,10 +284,10 @@ const contents = [
         thumbHead: "NYC Shootings",
         thumbSub: "Year to date dashboard, stats and map",
         caption: "A member of New York's Finest keeps watch on a summer day. Photo: See-ming Lee",
-        summary: "This interface lets users explore a dashboard and interactive map of year-to-date shooting incidents in New York City. The interface utilizes Open Data NYC's API to gather a list of individual shootings compiled by the NYPD. From there, it dynamically creates an interactive map with pins (and info pop-ups) for each shooting. It then sorts and compiles the data into statistics and populates a chart with them. The interface was built with Vue.js, Express.js, and Mapbox. The Express server is used mainly to hide the API's access token in an environmental variable. It follows the design aesthetic of NYC government's digital products.",
+        summary: "This interface lets users explore a dashboard and interactive map of year-to-date shooting incidents in New York City. The interface utilizes Open Data NYC's API to gather a list of individual shootings compiled by the NYPD. From there, it dynamically creates an interactive map with pins (and info pop-ups) for each shooting. It then sorts and compiles the data into statistics and populates a chart with them. The interface was built with Vue.js, Express.js, and Mapbox. It follows the design aesthetic of NYC government's digital products.",
         platform: "Heroku",
         platformUrl: "nyc-shooting-incidents.herokuapp.com",
-        platformWarn: "(opens slowly) (Feb. 2026 - NYC ended the dataset this app uses. Unfortunately, the data fields and map no longer populate.)",
+        platformWarn: "(opens slowly)",
         techs: "Vue, Vite, Express, Mapbox, Open Data NYC API, Git, GitHub, ESLint, Stylelint, Figma",
         wireframes: [
             {   

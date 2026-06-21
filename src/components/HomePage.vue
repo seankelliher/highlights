@@ -36,7 +36,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 
             <div class="home-grid-notice">
                 <div class="home-grid-notice-card">
-                    <span class="notice">{{ greeting }}. NYC discontinued the dataset "NYC Shootings" uses. I'm working on a fix.</span>
+                    <span class="notice">{{ greeting }}. "NYC Shootings" interface is restored, after NYPD made changes to its API over winter.</span>
                 </div>
             </div>
 
