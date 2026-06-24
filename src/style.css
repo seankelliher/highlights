@@ -16,6 +16,7 @@
   --tag-border-blue: #78a9ff; /* Blue 40 */
   --tag-color-blue: #0043ce; /* Blue 70 */
   --button-primary: #0f62fe; /* Blue 60 */
+  --button-primary-hover: #0353e9;
   --text-on-color: #fff; /* White */
   --border-subtle-01: #e0e0e0; /* Gray 20 */
   --border-subtle-02: #c6c6c6; /* Gray 30 */
@@ -470,7 +471,7 @@ button a {
 }
 
 button:hover {
-    text-decoration: underline;
+    background: var(--button-primary-hover);
 }
 
 .btn-lg {
