@@ -11,7 +11,7 @@
   --layer-selected-inverse: #161616; /* Gray 100 */
   --text-primary: #161616; /* Gray 100 */
   --text-secondary: #525252; /* Gray 70 */
-  --syntax-heading-2: #0072c3; /* Cyan 70 */
+  --syntax-heading-2: #0072c3; /* Cyan 70, currently not used */
   --tag-background-blue: #d0e2ff; /* Blue 20 */
   --tag-border-blue: #78a9ff; /* Blue 40 */
   --tag-color-blue: #0043ce; /* Blue 70 */
@@ -501,13 +501,14 @@ h1 {
 h2 {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
     font-size: var(--fs3);
-    line-height: 1.2;
-    color: var(--syntax-heading-2);
+    line-height: 1;
+    margin-bottom: 0;
+    color: var(--text-primary);
 }
 
 h3 {
