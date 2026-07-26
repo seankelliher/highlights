@@ -30,13 +30,13 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
             <div class="home-grid-intro">
                 <hgroup>
                     <h2>UI/UX Side Projects</h2>
-                    <p>I drew these interfaces on paper, then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects utilize open source APIs.</p>
+                    <p>{{ greeting }}. I drew these interfaces on paper, then formalized the ideas into wireframes, selected typography, and planned their color schemes, before building with a JavaScript framework. Some projects utilize open source APIs.</p>
                 </hgroup>
             </div>
 
             <div class="home-grid-notice">
                 <div class="home-grid-notice-card">
-                    <span class="notice">{{ greeting }}. "NYC Shootings" interface is restored, after NYPD made changes to its API over winter.</span>
+                    <span class="notice">New! Revised color scheme for "US Senate" directory.</span>
                 </div>
             </div>
 
