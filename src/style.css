@@ -462,6 +462,12 @@ button {
     background: var(--button-primary);
     border: none;
     line-height: 1.8;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     color: var(--text-on-color);
 }
 
@@ -486,9 +492,9 @@ button:hover {
 
 /* Headings - Noto sans has font-weight 100 to 900 */
 h1 {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans Display", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -499,9 +505,9 @@ h1 {
 }
 
 h2 {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans Display", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -512,9 +518,9 @@ h2 {
 }
 
 h3 {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans Display", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -525,9 +531,9 @@ h3 {
 
 /* Paragraph */
 p {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -541,11 +547,15 @@ p a {
     color: var(--text-primary);
 }
 
+.notice-text {
+    color: var(--tag-color-blue);
+}
+
 /* Homepage notice */
 .notice {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -556,9 +566,9 @@ p a {
 
 /* Figcaptions and related */
 figcaption {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -568,7 +578,12 @@ figcaption {
 }
 
 .fig-heading {
-    font-weight: 700;
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     display: block;
 }
 
@@ -597,9 +612,9 @@ dl {
 }
 
 dt {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans Display", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -609,7 +624,7 @@ dt {
 }
 
 dd {
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -626,9 +641,9 @@ dd {
     width: 80%;
     margin: 0;
     padding: 0 10%;
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
