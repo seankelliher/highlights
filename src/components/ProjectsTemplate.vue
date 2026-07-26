@@ -92,7 +92,7 @@ document.querySelector("meta[name='description']").setAttribute("content", proje
                 <div class="info-card">
                     <div class="intro-sidebar-text">
                         <!--<h3>Technologies</h3>-->
-                        <p>The interface was created with the software programs {{ projectContent.techs }}.</p>
+                        <p class="notice-text">The interface was created with the software programs {{ projectContent.techs }}.</p>
                     </div>
                 </div>
             </div>
