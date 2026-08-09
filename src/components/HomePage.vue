@@ -36,7 +36,7 @@ document.querySelector("meta[name='description']").setAttribute("content", "I'm 
 
             <div class="home-grid-notice">
                 <div class="home-grid-notice-card">
-                    <span class="notice">New! Revised color scheme for "US Senate" directory.</span>
+                    <span class="notice">8/9/2026 - "NYC Shootings" is back. I made changes to accommodate changes by Open Data NYC and Mapbox.</span>
                 </div>
             </div>
 
