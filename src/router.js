@@ -1,11 +1,13 @@
 import { createRouter,createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage.vue";
 import ProjectsTemplate from "./components/ProjectsTemplate.vue";
+import MunicipalDesigns from "./components/MunicipalDesigns.vue";
 import NotFound from "./components/NotFound.vue";
 
 const routes = [
     { path: "/", component: HomePage },
     { path: "/projects/:id", component: ProjectsTemplate },
+    { path: "/municipal", component: MunicipalDesigns },
     { path: "/:catchAll(.*)", component: NotFound }
 ];
 
