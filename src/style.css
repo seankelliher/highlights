@@ -377,7 +377,6 @@ figure.intro-image {
 
     .info-card {
         margin-bottom: 2em;
-
     }
 }
 
@@ -434,6 +433,18 @@ figure.wireframe {
     }
 }
 
+/* Portfolio page */
+.text-summary {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 0 2em;
+    padding: 0 5%;
+    flex: initial;
+    background: var(--layer-01);
+    border: 1px solid var(--border-subtle-01);
+}
+
+/* Footer */
 footer {
     width: 95%;
     margin: 0;
@@ -529,8 +540,8 @@ h3 {
     color: var(--text-primary);
 }
 
-/* Paragraph */
-p {
+/* Paragraph and lists */
+p, li {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -542,7 +553,7 @@ p {
     color: var(--text-primary);
 }
 
-p a {
+p a, li a {
     text-decoration: underline;
     color: var(--text-primary);
 }
